@@ -1,0 +1,56 @@
+// This file must be imported before loading html5-boilerplate
+
+// Responsive
+// ------------------------------------------------
+$responsive: true !default;
+
+
+// Cross browser support settings
+// ------------------------------------------------
+$lt-ie9: false !default;
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: $lt-ie9;
+$legacy-support-for-ie8: $lt-ie9;
+
+// Susy
+// ------------------------
+// Grid settings
+$show-grid-backgrounds  : true;
+// phone
+$container-style: fixed;
+$total-columns: 4;
+$column-width: 60px; //欄位寬度  
+$gutter-width: 20px; //欄位與欄位間的間距  
+$grid-padding: 10px; //格線最外圍左右邊的間距  
+// Breakpoints
+$phone: 4 568px; 
+$tablet: 569px 8 1024px;// Page width: 300 px
+$desktop: 1024px 12 fixed-layout;//超過1024
+
+// Where `at-breakpoint` is used with one of the `fixed-layout` breakpoints above,
+// the block will be scoped to a `fixed-layout` class instead of being scoped to 
+// media queries.
+$breakpoint-media-output: $responsive and not $lt-ie9;
+$breakpoint-ie-output: $lt-ie9 or not $responsive;
+
+
+// base
+$font-size: 1rem;
+$base-font-size: 16px;
+$line-height: 1.75 !default;
+$base-line-height: 28px;
+
+$font-color: #222 !default;
+$font-family: Arial, Helvetica, 'LiHei Pro', '微軟正黑體', '新細明體', sans-serif !default;
+
+$link-color: #0074D9 !default;
+$link-hover-color: darken(#7FDBFF, 58) !default;
+$link-visited-color: darken(#B10DC9, 21) !default;
+$link-active-color: adjust_hue(#FF851B, 259) !default;
+$link-focus-color: $link-hover-color !default;
+
+$selected-font-color: #fff !default;
+$selected-background-color: #0086AB !default;
+
+$invalid-background-color: #f0dddd !default;
+

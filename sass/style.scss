@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+
+// Mixin & function libraries
+// ------------------------------------------------
+// Vendor
+@import "susy";
+ 
+// Yours mixins,functions
+@import "helpers";
+
+// Here's where we define some default constants
+@import "config";
+
+// Then we'll import the compass extension
+@import "h5bp";
+
+// Now, you can simply include everything
+// (except print and helpers) by uncommeting this line
+@include h5bp-normalize;
+
+// Or, you can import the "overrides" partial if
+// you want more control over individual mixins
+//@import "partials/overrides";
+
+
+// Finally, put your own styles in these partials
+// and add more as needed (i.e. forms, tables, nav)
+// @import "partials/fonts";
+
+// partials/page 相當於smacss的base
+@import "partials/page";
+
+// Modules 自己寫的模組
+@import "modules";
+
+// Objects 可重複使用的元件（包括UI等等）
+@import "objects";
+
+// Vendors 非自己撰寫，所使用的外掛plugins等
+@import "vendors";
+
+// Placeholders
+@import "placeholders";
+
+// Helpers classes should come second-to-last
+@include h5bp-helpers;
+
+// Media should come last
+@import "partials/media";

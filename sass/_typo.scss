@@ -1,0 +1,49 @@
+// *************************************
+//
+//   base Index 
+//   個別頁面特殊排版
+//   -> import
+//   -> base
+//   -> other
+//
+// *************************************
+
+// -------------------------------------
+//   import
+// -------------------------------------
+
+@import "compass/css3";
+@import "compass/typography/links";
+
+
+// -------------------------------------
+//   base
+// -------------------------------------
+
+body, select, input, textarea { //from h5bp
+	color: $font-color;
+	font-family: $font-family;
+}
+
+img {
+  	max-width: 100%; // Add !important if needed. //
+  	height: auto;    // Add !important if needed. //
+}
+
+a {
+	@include link-colors($link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color);
+    text-decoration:    none;
+    -webkit-transition: color .3s ease-in-out;
+    transition:         color .3s ease-in-out;
+}
+
+// -------------------------------------
+//   other(欸)
+// -------------------------------------
+
+.text-important {
+	margin-right: 3px;
+	margin-left: 3px;
+	font-weight: bold;
+	color: #e6263f;
+}

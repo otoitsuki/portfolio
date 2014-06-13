@@ -1,0 +1,3 @@
+@function pxtorem($px){//$px為需要轉換的字號
+    @return $px / $base-font-size * 1rem;
+}

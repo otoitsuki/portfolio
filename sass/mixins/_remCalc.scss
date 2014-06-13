@@ -1,0 +1,40 @@
+// ------------------------------------------------
+// .wrapper {
+//     @include remCalc(width,45);
+//     @include remCalc(margin,1,.5,2,3);
+// }
+//     ↓
+// .wrapper {
+//   width: 720px;
+//   width: 45rem;
+//   margin: 16px 8px 32px 48px;
+//   margin: 1rem 0.5rem 2rem 3rem; }
+// ------------------------------------------------
+
+@mixin remCalc($property, $values...) {
+  $max: length($values);//返回$values列表的長度值
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-units(nth($values, $i));//返回$values列表中的第$i個值，並將單位值去掉
+    $browser-default-font-size: strip-units($browser-default-font-size);
+    $pxValues: #{$pxValues + $value * $browser-default-font-size}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  } 
+
+  @for $i from 1 through $max {
+    $value: strip-units(nth($values, $i));
+    $remValues: #{$remValues + $value}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  } 
+
+  #{$property}: $pxValues; 
+  #{$property}: $remValues; 
+}

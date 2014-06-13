@@ -17,26 +17,3 @@ $tablet: 569px 8 1024px;// Page width: 300 px
 $desktop: 1024px 12 fixed-layout;//超過1024
 
 
-// -------------------------------------
-//   base
-// -------------------------------------
-
-$font-size: 1rem;
-$base-font-size: 16px;
-$line-height: 1.75 !default;
-$base-line-height: 28px;
-
-$font-color: #222 !default;
-$font-family: Arial, Helvetica, 'LiHei Pro', '微軟正黑體', '新細明體', sans-serif !default;
-
-$link-color: #0074D9 !default;
-$link-hover-color: darken(#7FDBFF, 58) !default;
-$link-visited-color: darken(#B10DC9, 21) !default;
-$link-active-color: adjust_hue(#FF851B, 259) !default;
-$link-focus-color: $link-hover-color !default;
-
-$selected-font-color: #fff !default;
-$selected-background-color: #0086AB !default;
-
-$invalid-background-color: #f0dddd !default;
-

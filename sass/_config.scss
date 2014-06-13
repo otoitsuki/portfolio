@@ -1,20 +1,9 @@
-// This file must be imported before loading html5-boilerplate
-
-// Responsive
-// ------------------------------------------------
-$responsive: true !default;
 
 
-// Cross browser support settings
-// ------------------------------------------------
-$lt-ie9: false !default;
-$legacy-support-for-ie6: false;
-$legacy-support-for-ie7: $lt-ie9;
-$legacy-support-for-ie8: $lt-ie9;
+// -------------------------------------
+//   Susy Grid settings
+// -------------------------------------
 
-// Susy
-// ------------------------
-// Grid settings
 $show-grid-backgrounds  : true;
 // phone
 $container-style: fixed;
@@ -27,14 +16,11 @@ $phone: 4 568px;
 $tablet: 569px 8 1024px;// Page width: 300 px
 $desktop: 1024px 12 fixed-layout;//超過1024
 
-// Where `at-breakpoint` is used with one of the `fixed-layout` breakpoints above,
-// the block will be scoped to a `fixed-layout` class instead of being scoped to 
-// media queries.
-$breakpoint-media-output: $responsive and not $lt-ie9;
-$breakpoint-ie-output: $lt-ie9 or not $responsive;
 
+// -------------------------------------
+//   base
+// -------------------------------------
 
-// base
 $font-size: 1rem;
 $base-font-size: 16px;
 $line-height: 1.75 !default;

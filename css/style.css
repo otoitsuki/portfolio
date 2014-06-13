@@ -1,212 +1,577 @@
-/*
-Syntax error: Undefined operation: "strip-units(64) times strip-units(16px)".
-        on line 22 of D:/Dropbox/f2e software/@template/normalsite/sass/helpers/_remCalc.scss, in `remCalc'
-        from line 27 of D:/Dropbox/f2e software/@template/normalsite/sass/modules/_grid.scss, in `@content'
-        from line 74 of D:/Dropbox/f2e software/fire.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `@content'
-        from line 15 of D:/Dropbox/f2e software/fire.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `layout'
-        from line 54 of D:/Dropbox/f2e software/fire.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `at-breakpoint'
-        from line 19 of D:/Dropbox/f2e software/@template/normalsite/sass/modules/_grid.scss
-        from line 11 of D:/Dropbox/f2e software/@template/normalsite/sass/_modules.scss
-        from line 35 of D:/Dropbox/f2e software/@template/normalsite/sass/style.scss
+@charset "utf-8";
+/* line 33, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
 
-Backtrace:
-D:/Dropbox/f2e software/@template/normalsite/sass/helpers/_remCalc.scss:22:in `remCalc'
-D:/Dropbox/f2e software/@template/normalsite/sass/modules/_grid.scss:27:in `@content'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss:74:in `@content'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss:15:in `layout'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss:54:in `at-breakpoint'
-D:/Dropbox/f2e software/@template/normalsite/sass/modules/_grid.scss:19
-D:/Dropbox/f2e software/@template/normalsite/sass/_modules.scss:11
-D:/Dropbox/f2e software/@template/normalsite/sass/style.scss:35
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/script/operation.rb:93:in `_perform'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/script/operation.rb:90:in `_perform'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/script/node.rb:40:in `perform'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/script/operation.rb:83:in `_perform'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/script/node.rb:40:in `perform'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/script/interpolation.rb:72:in `_perform'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/script/node.rb:40:in `perform'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:327:in `visit_variable'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:188:in `visit_for'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:188:in `visit_for'
-org/jruby/RubyRange.java:407:in `each'
-org/jruby/RubyEnumerable.java:705:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:185:in `visit_for'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:184:in `visit_for'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:70:in `perform_arguments'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:263:in `visit_mixin'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:205:in `visit_if'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_if'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:362:in `visit_media'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:205:in `visit_if'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:205:in `visit_if'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_if'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:205:in `visit_if'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:70:in `perform_arguments'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:263:in `visit_mixin'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:205:in `visit_if'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:205:in `visit_if'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:70:in `perform_arguments'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:263:in `visit_mixin'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:320:in `visit_rule'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:227:in `visit_import'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:227:in `visit_import'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:227:in `visit_import'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:227:in `visit_import'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Dropbox/f2e software/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-*/
-body:before {
+/* line 40, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 48, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 55, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 69, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 82, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 88, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 103, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 109, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 122, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 127, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 132, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 137, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 142, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 147, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/* line 153, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 159, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 163, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 168, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 174, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 181, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 188, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/* line 196, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* line 203, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+pre {
   white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined operation: \"strip-units(64) times strip-units(16px)\".\A         on line 22 of D:/Dropbox/f2e software/@template/normalsite/sass/helpers/_remCalc.scss, in `remCalc'\A         from line 27 of D:/Dropbox/f2e software/@template/normalsite/sass/modules/_grid.scss, in `@content'\A         from line 74 of D:/Dropbox/f2e software/fire.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `@content'\A         from line 15 of D:/Dropbox/f2e software/fire.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `layout'\A         from line 54 of D:/Dropbox/f2e software/fire.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `at-breakpoint'\A         from line 19 of D:/Dropbox/f2e software/@template/normalsite/sass/modules/_grid.scss\A         from line 11 of D:/Dropbox/f2e software/@template/normalsite/sass/_modules.scss\A         from line 35 of D:/Dropbox/f2e software/@template/normalsite/sass/style.scss"; }
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 210, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/* line 216, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 222, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 228, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 235, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 239, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 253, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 257, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 264, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/* line 270, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 283, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 289, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 300, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 311, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/* line 316, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 325, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/* line 339, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 349, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 358, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 372, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+/* line 380, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 389, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+/* line 399, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 409, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 415, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 422, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 434, ../../../fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 23, ../sass/_typo.scss */
+body, select, input, textarea {
+  color: #222222;
+  font-family: Arial, Helvetica, "LiHei Pro", "微軟正黑體", "新細明體", sans-serif;
+}
+
+/* line 28, ../sass/_typo.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 33, ../sass/_typo.scss */
+a {
+  color: #0074d9;
+  text-decoration: none;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+/* line 18, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: #580664;
+}
+/* line 21, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:focus {
+  color: #003e56;
+}
+/* line 24, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #003e56;
+}
+/* line 27, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #cd1bff;
+}
+
+/* line 44, ../sass/_typo.scss */
+.text-important {
+  margin-right: 3px;
+  margin-left: 3px;
+  font-weight: bold;
+  color: #e6263f;
+}
+
+/* line 1, ../sass/partials/_floats.scss */
+.pull-right {
+  float: right !important;
+}
+
+/* line 4, ../sass/partials/_floats.scss */
+.pull-left {
+  float: left !important;
+}
+
+/* line 6, ../sass/partials/_y2b.scss */
+.y2b {
+  position: relative;
+  padding-bottom: 40%;
+  padding-top: 100px;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 15, ../sass/partials/_y2b.scss */
+.y2b iframe, .y2b object, .y2b embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media objects
+ * Taken from Twitter bootstrap.
+ * Licensed under Apache 2 (https://github.com/twbs/bootstrap/blob/master/LICENSE) and MIT licenses (https://github.com/twbs/bootstrap/blob/master/LICENSE-MIT). 
+*/
+/* line 19, ../sass/partials/_media-object.scss */
+.media,
+.media-body {
+  overflow: hidden;
+  *overflow: visible;
+  zoom: 1;
+}
+
+/* line 27, ../sass/partials/_media-object.scss */
+.media,
+.media .media {
+  margin-top: 15px;
+}
+
+/* line 30, ../sass/partials/_media-object.scss */
+.media:first-child {
+  margin-top: 0;
+}
+
+/* line 35, ../sass/partials/_media-object.scss */
+.media-object {
+  display: block;
+}
+
+/* line 40, ../sass/partials/_media-object.scss */
+.media-heading {
+  margin: 0 0 5px;
+}
+
+/* line 48, ../sass/partials/_media-object.scss */
+.media > .pull-left {
+  margin-right: 10px;
+}
+
+/* line 51, ../sass/partials/_media-object.scss */
+.media > .pull-right {
+  margin-left: 10px;
+}
+
+/* line 60, ../sass/partials/_media-object.scss */
+.media-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+/* line 10, ../sass/modules/_grid.scss */
+.grid {
+  *zoom: 1;
+  max-width: 300px;
+  _width: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(20%, rgba(100, 100, 225, 0.25)), color-stop(20%, rgba(0, 0, 0, 0)), color-stop(26.66667%, rgba(0, 0, 0, 0)), color-stop(26.66667%, rgba(100, 100, 225, 0.25)), color-stop(46.66667%, rgba(100, 100, 225, 0.25)), color-stop(46.66667%, rgba(0, 0, 0, 0)), color-stop(53.33333%, rgba(0, 0, 0, 0)), color-stop(53.33333%, rgba(100, 100, 225, 0.25)), color-stop(73.33333%, rgba(100, 100, 225, 0.25)), color-stop(73.33333%, rgba(0, 0, 0, 0)), color-stop(80.0%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-position: left top;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  -ms-background-origin: content-box;
+  -o-background-origin: content-box;
+  background-origin: content-box;
+  -webkit-background-clip: content-box;
+  -moz-background-clip: content-box;
+  background-clip: content-box;
+}
+/* line 38, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 569px) and (max-width: 1024px) {
+  /* line 10, ../sass/modules/_grid.scss */
+  .grid {
+    max-width: 620px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(9.67742%, rgba(100, 100, 225, 0.25)), color-stop(9.67742%, rgba(0, 0, 0, 0)), color-stop(12.90323%, rgba(0, 0, 0, 0)), color-stop(12.90323%, rgba(100, 100, 225, 0.25)), color-stop(22.58065%, rgba(100, 100, 225, 0.25)), color-stop(22.58065%, rgba(0, 0, 0, 0)), color-stop(25.80645%, rgba(0, 0, 0, 0)), color-stop(25.80645%, rgba(100, 100, 225, 0.25)), color-stop(35.48387%, rgba(100, 100, 225, 0.25)), color-stop(35.48387%, rgba(0, 0, 0, 0)), color-stop(38.70968%, rgba(0, 0, 0, 0)), color-stop(38.70968%, rgba(100, 100, 225, 0.25)), color-stop(48.3871%, rgba(100, 100, 225, 0.25)), color-stop(48.3871%, rgba(0, 0, 0, 0)), color-stop(51.6129%, rgba(0, 0, 0, 0)), color-stop(51.6129%, rgba(100, 100, 225, 0.25)), color-stop(61.29032%, rgba(100, 100, 225, 0.25)), color-stop(61.29032%, rgba(0, 0, 0, 0)), color-stop(64.51613%, rgba(0, 0, 0, 0)), color-stop(64.51613%, rgba(100, 100, 225, 0.25)), color-stop(74.19355%, rgba(100, 100, 225, 0.25)), color-stop(74.19355%, rgba(0, 0, 0, 0)), color-stop(77.41935%, rgba(0, 0, 0, 0)), color-stop(77.41935%, rgba(100, 100, 225, 0.25)), color-stop(87.09677%, rgba(100, 100, 225, 0.25)), color-stop(87.09677%, rgba(0, 0, 0, 0)), color-stop(90.32258%, rgba(0, 0, 0, 0)), color-stop(90.32258%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+  /* line 38, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 10, ../sass/modules/_grid.scss */
+  .grid {
+    max-width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(6.38298%, rgba(100, 100, 225, 0.25)), color-stop(6.38298%, rgba(0, 0, 0, 0)), color-stop(8.51064%, rgba(0, 0, 0, 0)), color-stop(8.51064%, rgba(100, 100, 225, 0.25)), color-stop(14.89362%, rgba(100, 100, 225, 0.25)), color-stop(14.89362%, rgba(0, 0, 0, 0)), color-stop(17.02128%, rgba(0, 0, 0, 0)), color-stop(17.02128%, rgba(100, 100, 225, 0.25)), color-stop(23.40426%, rgba(100, 100, 225, 0.25)), color-stop(23.40426%, rgba(0, 0, 0, 0)), color-stop(25.53191%, rgba(0, 0, 0, 0)), color-stop(25.53191%, rgba(100, 100, 225, 0.25)), color-stop(31.91489%, rgba(100, 100, 225, 0.25)), color-stop(31.91489%, rgba(0, 0, 0, 0)), color-stop(34.04255%, rgba(0, 0, 0, 0)), color-stop(34.04255%, rgba(100, 100, 225, 0.25)), color-stop(40.42553%, rgba(100, 100, 225, 0.25)), color-stop(40.42553%, rgba(0, 0, 0, 0)), color-stop(42.55319%, rgba(0, 0, 0, 0)), color-stop(42.55319%, rgba(100, 100, 225, 0.25)), color-stop(48.93617%, rgba(100, 100, 225, 0.25)), color-stop(48.93617%, rgba(0, 0, 0, 0)), color-stop(51.06383%, rgba(0, 0, 0, 0)), color-stop(51.06383%, rgba(100, 100, 225, 0.25)), color-stop(57.44681%, rgba(100, 100, 225, 0.25)), color-stop(57.44681%, rgba(0, 0, 0, 0)), color-stop(59.57447%, rgba(0, 0, 0, 0)), color-stop(59.57447%, rgba(100, 100, 225, 0.25)), color-stop(65.95745%, rgba(100, 100, 225, 0.25)), color-stop(65.95745%, rgba(0, 0, 0, 0)), color-stop(68.08511%, rgba(0, 0, 0, 0)), color-stop(68.08511%, rgba(100, 100, 225, 0.25)), color-stop(74.46809%, rgba(100, 100, 225, 0.25)), color-stop(74.46809%, rgba(0, 0, 0, 0)), color-stop(76.59574%, rgba(0, 0, 0, 0)), color-stop(76.59574%, rgba(100, 100, 225, 0.25)), color-stop(82.97872%, rgba(100, 100, 225, 0.25)), color-stop(82.97872%, rgba(0, 0, 0, 0)), color-stop(85.10638%, rgba(0, 0, 0, 0)), color-stop(85.10638%, rgba(100, 100, 225, 0.25)), color-stop(91.48936%, rgba(100, 100, 225, 0.25)), color-stop(91.48936%, rgba(0, 0, 0, 0)), color-stop(93.61702%, rgba(0, 0, 0, 0)), color-stop(93.61702%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+  /* line 38, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/* line 91, ../../../fire.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss */
+.fixed-layout .grid {
+  *zoom: 1;
+  max-width: 940px;
+  _width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(6.38298%, rgba(100, 100, 225, 0.25)), color-stop(6.38298%, rgba(0, 0, 0, 0)), color-stop(8.51064%, rgba(0, 0, 0, 0)), color-stop(8.51064%, rgba(100, 100, 225, 0.25)), color-stop(14.89362%, rgba(100, 100, 225, 0.25)), color-stop(14.89362%, rgba(0, 0, 0, 0)), color-stop(17.02128%, rgba(0, 0, 0, 0)), color-stop(17.02128%, rgba(100, 100, 225, 0.25)), color-stop(23.40426%, rgba(100, 100, 225, 0.25)), color-stop(23.40426%, rgba(0, 0, 0, 0)), color-stop(25.53191%, rgba(0, 0, 0, 0)), color-stop(25.53191%, rgba(100, 100, 225, 0.25)), color-stop(31.91489%, rgba(100, 100, 225, 0.25)), color-stop(31.91489%, rgba(0, 0, 0, 0)), color-stop(34.04255%, rgba(0, 0, 0, 0)), color-stop(34.04255%, rgba(100, 100, 225, 0.25)), color-stop(40.42553%, rgba(100, 100, 225, 0.25)), color-stop(40.42553%, rgba(0, 0, 0, 0)), color-stop(42.55319%, rgba(0, 0, 0, 0)), color-stop(42.55319%, rgba(100, 100, 225, 0.25)), color-stop(48.93617%, rgba(100, 100, 225, 0.25)), color-stop(48.93617%, rgba(0, 0, 0, 0)), color-stop(51.06383%, rgba(0, 0, 0, 0)), color-stop(51.06383%, rgba(100, 100, 225, 0.25)), color-stop(57.44681%, rgba(100, 100, 225, 0.25)), color-stop(57.44681%, rgba(0, 0, 0, 0)), color-stop(59.57447%, rgba(0, 0, 0, 0)), color-stop(59.57447%, rgba(100, 100, 225, 0.25)), color-stop(65.95745%, rgba(100, 100, 225, 0.25)), color-stop(65.95745%, rgba(0, 0, 0, 0)), color-stop(68.08511%, rgba(0, 0, 0, 0)), color-stop(68.08511%, rgba(100, 100, 225, 0.25)), color-stop(74.46809%, rgba(100, 100, 225, 0.25)), color-stop(74.46809%, rgba(0, 0, 0, 0)), color-stop(76.59574%, rgba(0, 0, 0, 0)), color-stop(76.59574%, rgba(100, 100, 225, 0.25)), color-stop(82.97872%, rgba(100, 100, 225, 0.25)), color-stop(82.97872%, rgba(0, 0, 0, 0)), color-stop(85.10638%, rgba(0, 0, 0, 0)), color-stop(85.10638%, rgba(100, 100, 225, 0.25)), color-stop(91.48936%, rgba(100, 100, 225, 0.25)), color-stop(91.48936%, rgba(0, 0, 0, 0)), color-stop(93.61702%, rgba(0, 0, 0, 0)), color-stop(93.61702%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-position: left top;
+  -ms-background-origin: content-box;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+/* line 38, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.fixed-layout .grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}

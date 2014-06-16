@@ -1,56 +1,86 @@
-@charset "utf-8";
+// *************************************
+//
+//   Application
+//   -> MVCSS v3.0.2
+//
+// *************************************
 
 // -------------------------------------
-//   相關參數設定
+//   Compass
 // -------------------------------------
-@import "config";
+
+@import "h5bp"; // compass extension
+@import "compass/css3";
+@import "compass/typography/links";
+@import "compass/typography/lists";
+@import "compass/utilities/general/clearfix";
 
 // -------------------------------------
 //   Import framework
 // -------------------------------------
 @import "susy";
 
-
-// -------------------------------------
-//   reset/normalize
-// -------------------------------------
-@import "h5bp"; // Then we'll import the compass extension
-@include h5bp-normalize;
-
 // -------------------------------------
 //   Core
 // -------------------------------------
 
+// ----- Reset ----- //
+
+@include h5bp-normalize;
+
+// ----- Settings ----- //
+
+@import "core/config";
+
 // ----- colors.scss ----- //
-@import "colors";
+//@import "colors";
 
-// ----- mixins、modules ----- //
+// ----- Helpers(mixins) ----- //
 // 專門include用的
-@import "mixins";
+@import "core/helpers";
 
-// ----- 字體設定、H1～H6設定、各種文本HTML設定 ----- //
-@import "typo"; 
+// ----- Base ----- //
+
+@import "core/base";
+
+// ----- Content ----- //
+
+@import "core/content";
 
 // ----- Layout ----- //
-// 建立layout(grid).scss管天地內容<這塊我一直很猶豫到底是要獨立開layout還是要獨立放 
+
+@import "core/layout";
+
+// -------------------------------------
+//   Component 網站重複使用元件 (module其之一)
+// -------------------------------------
+
+// y2b RWD
+//@import "component/y2b";
+
+
+// csswizard 的 flag-object
+@import "component/flag-object";
+
+
+
+// bootstrap的media-object
+//@import "component/media-object";
 
 
 // -------------------------------------
-//   partials 網站共通元件 
+//   Particials 該專案專屬全站共通元件 (module其之二)
 // -------------------------------------
 
-@import "partials"; 
+
 
 // -------------------------------------
-//   pages 個別頁面特殊排版 
+//   pages 個別頁面特殊排版、設計 放about.scss etc (module其之三，不過是以區塊命名檔案)
 // -------------------------------------
-// 裡面放about.scss etc
 
 @import "pages"; 
 
 
 // -------------------------------------
-//   Vendors 非自己撰寫，所使用的外掛plugins等 
+//   Inbox
 // -------------------------------------
-
-// @import "vendors"; 

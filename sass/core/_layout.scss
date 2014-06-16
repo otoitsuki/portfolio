@@ -1,0 +1,39 @@
+// *************************************
+//
+//   Layout
+//   -> Config, Grid
+//
+// *************************************
+
+// -------------------------------------
+//   Config
+// -------------------------------------
+$show-grid-backgrounds  : true;
+// phone
+$container-style: fixed;
+$total-columns: 12;
+$column-width: 60px; //欄位寬度  
+$gutter-width: 20px; //欄位與欄位間的間距  
+$grid-padding: 10px; //格線最外圍左右邊的間距  
+
+
+// -------------------------------------
+//   Grid
+// -------------------------------------
+.grid {
+  @include container;
+  @include border-box-sizing;
+  @include susy-grid-background;
+}
+
+.header {
+
+}
+
+.content {
+
+}
+
+.footer {
+
+}

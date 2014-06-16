@@ -1,0 +1,24 @@
+// *************************************
+//
+//   Base
+//   -> Base-level tags (body, p, etc.)
+//
+// *************************************
+
+body, select, input, textarea { //from h5bp
+	color: $font-color;
+	font-family: $font-family;
+}
+
+img {
+  	max-width: 100%; // Add !important if needed. //
+  	height: auto;    // Add !important if needed. //
+}
+
+a {
+	@include link-colors($link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color);
+    text-decoration:    none;
+    -webkit-transition: color .3s ease-in-out;
+    transition:         color .3s ease-in-out;
+}
+

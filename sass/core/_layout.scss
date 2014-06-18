@@ -22,8 +22,7 @@ $grid-padding: 10px; //格線最外圍左右邊的間距
 // -------------------------------------
 .grid {
   @include container;
-  @include border-box-sizing;
-  @include susy-grid-background;
+  // @include susy-grid-background;
 }
 
 .header {

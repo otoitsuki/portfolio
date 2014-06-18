@@ -2,9 +2,13 @@
 //
 //   Base
 //   -> Base-level tags (body, p, etc.)
+//   -> Typography
 //
 // *************************************
 
+// -------------------------------------
+//   Base-level 
+// -------------------------------------
 body, select, input, textarea { //from h5bp
 	color: $font-color;
 	font-family: $font-family;
@@ -22,3 +26,22 @@ a {
     transition:         color .3s ease-in-out;
 }
 
+// -------------------------------------
+//   Headings
+// -------------------------------------
+
+h1,h2 {
+	text-align: center;
+}
+
+
+// -------------------------------------
+//   other(欸)
+// -------------------------------------
+
+.text-important {
+	margin-right: 3px;
+	margin-left: 3px;
+	font-weight: bold;
+	color: #e6263f;
+}

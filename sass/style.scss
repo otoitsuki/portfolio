@@ -43,9 +43,6 @@
 
 @import "core/base";
 
-// ----- Content ----- //
-
-@import "core/content";
 
 // ----- Layout ----- //
 
@@ -67,6 +64,8 @@
 // bootstrap的media-object
 //@import "component/media-object";
 
+//buttons http://alexwolfe.github.io/Buttons/
+@import "component/buttons/buttons";
 
 // -------------------------------------
 //   Particials 該專案專屬全站共通元件 (module其之二)

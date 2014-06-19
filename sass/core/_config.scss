@@ -23,9 +23,11 @@ $font-family: Arial, Helvetica, 'LiHei Pro', '微軟正黑體', '新細明體', 
 // -------------------------------------
 
 
-$font-color: #111111;
-$link-color: #8C6645;
-$link-hover-color: darken($link-color, 31);
+// --- base --- //
+
+$font-color: #333;
+$link-color: #009F8C;
+$link-hover-color: darken($link-color, 10);
 $link-visited-color: darken($link-color, 21);
 $link-active-color: adjust_hue($link-color, 12);
 $link-focus-color: $link-hover-color;
@@ -34,3 +36,7 @@ $selected-font-color: #fff;
 $selected-background-color: #0086AB;
 
 $invalid-background-color: #f0dddd;
+
+// --- typo --- //
+
+$heading-color: #111;

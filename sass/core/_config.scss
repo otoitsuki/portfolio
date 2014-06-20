@@ -6,24 +6,11 @@
 // *************************************
 
 // -------------------------------------
-//   Fonts-size,face for font-size.scss etc
-// -------------------------------------
-
-$font-size: 1rem;
-$base-font-size: 16px;
-$line-height: 1.75 ;
-$base-line-height: 28px;
-
-$font-family: Arial, Helvetica, 'LiHei Pro', '微軟正黑體', '新細明體', sans-serif;
-
-
-
-// -------------------------------------
-//   Fonts-color
+//   Variables
 // -------------------------------------
 
 
-// --- base --- //
+// ----- Base Colors ----- //
 
 $font-color: #333;
 $link-color: #009F8C;
@@ -37,6 +24,30 @@ $selected-background-color: #0086AB;
 
 $invalid-background-color: #f0dddd;
 
+
+// ----- Base Borders & Box Shadows ----- //
+
+$base-border: 1px solid $font-color;
+$base-borderRadius: 3px;
+$base-boxShadow: 0 1px 2px rgba($font-color, 0.25);
+
+
+// ----- Base Content ----- //
+
+
+$font-size: 1rem;
+$base-font-size: 16px;
+$line-height: 1.75 ;
+$base-line-height: 28px;
+
+$font-family: Arial, Helvetica, 'LiHei Pro', '微軟正黑體', '新細明體', sans-serif;
+
+
 // --- typo --- //
 
 $heading-color: #111;
+
+
+// ----- Base Layout ----- //
+
+$base-whitespace: 20px;

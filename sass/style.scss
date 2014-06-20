@@ -18,6 +18,7 @@
 // -------------------------------------
 //   Import framework
 // -------------------------------------
+
 @import "susy";
 
 // -------------------------------------
@@ -32,14 +33,12 @@
 
 @import "core/config";
 
-// ----- colors.scss ----- //
-//@import "colors";
-
 // ----- Helpers(mixins) ----- //
 // 專門include用的
+
 @import "core/helpers";
 
-// ----- Base ----- //
+// ----- Base+Content ----- //
 
 @import "core/base";
 
@@ -49,26 +48,25 @@
 @import "core/layout";
 
 // -------------------------------------
-//   Component 網站重複使用元件 (module其之一)
+//   modules 網站可重複使用元件 (module其之一)
 // -------------------------------------
 
 // y2b RWD
-//@import "component/y2b";
+//@import "modules/y2b";
 
 
 // csswizard 的 flag-object
-@import "component/flag-object";
-
+@import "modules/flag-object";
 
 
 // bootstrap的media-object
-//@import "component/media-object";
+//@import "modules/media-object";
 
 //buttons http://alexwolfe.github.io/Buttons/
-@import "component/buttons/buttons";
+@import "modules/buttons/buttons";
 
 // -------------------------------------
-//   Particials 該專案專屬全站共通元件 (module其之二)
+//   Partials 該專案專屬全站共通元件 (module其之二)
 // -------------------------------------
 
 

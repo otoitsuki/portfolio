@@ -9,17 +9,6 @@
 //  extends
 //-------------------------------------
 
-%imgC {
-	text-align: center;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-%tC {
-	text-align: center;
-}
-
 // 各種 table 設計樣式
 @import "helpers/tables";
 
@@ -49,7 +38,7 @@
 // 垂直置中
 @import "helpers/vertical-align";
 
-// 把圖片做成input按鈕，支援hover
+// 把input、a等做成圖片按鈕，支援hover
 @import "helpers/pic-button";
 
 // 支援IE8 的 rgba() 背景顏色 MIXIN，用法：@include bg-rgba(#fff,0.5);

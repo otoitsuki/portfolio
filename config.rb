@@ -4,10 +4,10 @@ Slim::Engine.set_default_options :pretty => true, :disable_escape => true, :form
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "css"
+css_dir = "styles"
 sass_dir = "sass"
 images_dir = "images"
-javascripts_dir = "js"
+javascripts_dir = "scripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
@@ -27,10 +27,10 @@ line_comments = false
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 preferred_syntax = :scss
 
-css_dir = "css" # by Fire.app 
+css_dir = "styles" # by Fire.app 
 sass_dir = "sass" # by Fire.app 
 images_dir = "images" # by Fire.app 
-javascripts_dir = "js" # by Fire.app 
+javascripts_dir = "scripts" # by Fire.app 
 fireapp_coffeescripts_dir = "coffeescripts" # by Fire.app 
 fireapp_livescripts_dir = "livescripts" # by Fire.app 
 fireapp_minifyjs_on_build = true # by Fire.app 

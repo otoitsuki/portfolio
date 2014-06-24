@@ -9,7 +9,7 @@
 //   Compass
 // -------------------------------------
 
-@import "h5bp"; // compass extension
+// @import "h5bp"; // compass extension
 @import "compass/css3";
 @import "compass/typography/links";
 @import "compass/typography/lists";
@@ -25,13 +25,13 @@
 //   Core
 // -------------------------------------
 
-// ----- Reset ----- //
-
-@include h5bp-normalize;
-
 // ----- Settings ----- //
 
 @import "core/config";
+
+// ----- Reset ----- //
+
+@import "core/typo";
 
 // ----- Helpers(mixins) ----- //
 // 專門include用的

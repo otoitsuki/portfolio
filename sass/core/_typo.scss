@@ -53,7 +53,7 @@ audio, canvas, video {
 
 // 要注意表單元素並不繼承父級 font 的問題 //
 body, button, input, select, textarea {
-	font:0.875em/1.8 $b-font-family;
+	font:0.875em/1.8 $b-fontfamily;
 }
 
 // 去除 IE6 input/button 多余的空白 //
@@ -249,7 +249,7 @@ figcaption {
 h1, h2, h3, h4, h5, h6{
 	font-weight: 500;
 	*font-weight: 800;
-    font-family: $b-font-family;
+    font-family: $b-fontfamily;
 	color:#333;
 }
 

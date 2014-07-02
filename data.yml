@@ -2,6 +2,7 @@ site-title: "網站標題"
 site-name: "網站名稱"
 site-url: "http://"
 site-description: "預設敘述"
+site-author: "作者名"
 
 og-type: "website"
 og-image: "images/fb.png"

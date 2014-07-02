@@ -10,43 +10,52 @@
 //   Base-level 
 // -------------------------------------
 body, select, input, textarea { //from h5bp
-	color: $font-color;
-	font-family: $font-family;
+	color: $c-text;
 }
 
+body {
+	font-size: 100%;
+}
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+ul, p {
+  margin-bottom: $b-space;
+  margin-top: 0;
+}
+
+li {
+  margin-bottom: $b-space-s;
+  margin-top: 0;
+}
+
+// ----- Headers ----- //
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-family: $b-fontFamily-heading;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: $b-space-xs;
+  margin-top: 0;
+}
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
 img {
-  	max-width: 100%; // Add !important if needed. //
-  	height: auto;    // Add !important if needed. //
+    max-width: 100%; // Add !important if needed. //
+    height: auto;    // Add !important if needed. //
 }
 
 a {
-	@include link-colors($link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color);
+  @include link-colors($c-link, $c-link-hover, $c-link-active, $c-link-visited, $c-link-focus);
     text-decoration:    none;
     -webkit-transition: color .3s ease-in-out;
     transition:         color .3s ease-in-out;
-}
-
-// -------------------------------------
-//   Headings
-// -------------------------------------
-
-h1,h2,h3,h4,h5,h6 {
-	color: $heading-color;
-}
-
-
-// -------------------------------------
-//   page typo
-// -------------------------------------
-
-
-// -------------------------------------
-//   other(欸)
-// -------------------------------------
-
-.text-important {
-	margin-right: 3px;
-	margin-left: 3px;
-	font-weight: bold;
-	color: #e6263f;
 }

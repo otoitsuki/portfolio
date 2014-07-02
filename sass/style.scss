@@ -1,7 +1,6 @@
 // *************************************
 //
-//   Application
-//   -> MVCSS v3.0.2
+//   -> MVCSS v3.0.2+4.0.0
 //
 // *************************************
 
@@ -22,7 +21,7 @@
 @import "susy";
 
 // -------------------------------------
-//   Core
+//   Core / Foundation
 // -------------------------------------
 
 // ----- Settings ----- //
@@ -43,13 +42,13 @@
 @import "core/base";
 
 
-// ----- Layout ----- //
-
-@import "core/layout";
-
 // -------------------------------------
-//   modules 網站可重複使用元件 (module其之一)
+//   modules 網站可重複使用元件 (Components其之一)
 // -------------------------------------
+
+// Susy Grid
+@import "modules/grid";
+
 
 // y2b RWD
 //@import "modules/y2b";
@@ -63,16 +62,16 @@
 //@import "modules/media-object";
 
 //buttons http://alexwolfe.github.io/Buttons/
-@import "modules/buttons/buttons";
+//@import "modules/buttons/buttons";
 
 // -------------------------------------
-//   Partials 該專案專屬全站共通元件 (module其之二)
+//   Partials 該專案專屬全站共通元件 (Components其之二)
 // -------------------------------------
 
 
 
 // -------------------------------------
-//   pages 個別頁面特殊排版、設計 放about.scss etc (module其之三，不過是以區塊命名檔案)
+//   pages 個別頁面特殊排版、設計 放about.scss etc (Components其之三，不過是以區塊命名檔案)
 // -------------------------------------
 
 @import "pages"; 
@@ -81,3 +80,5 @@
 // -------------------------------------
 //   Inbox
 // -------------------------------------
+
+

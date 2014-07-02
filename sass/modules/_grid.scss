@@ -48,11 +48,6 @@ $grid-padding: 10px; //格線最外圍左右邊的間距
 	display: block;
 }
 
-%l-condense, .l-condense {
-	margin-bottom: pxtorem($base-whitespace / 2);
-}
-  
-
 %l-pullLeft, .l-pullLeft {
 	float: left;
 }
@@ -69,14 +64,5 @@ $grid-padding: 10px; //格線最外圍左右邊的間距
 
 %tC ,.tC {
 	text-align: center;
-}
-
-%l-space, .l-space {
-	margin-bottom: pxtorem($base-whitespace);
-}
-  
-
-%l-xspace, .l-xspace {
-	margin-bottom: pxtorem($base-whitespace * 2);
 }
 

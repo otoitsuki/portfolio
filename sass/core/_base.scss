@@ -6,28 +6,37 @@
 //
 // *************************************
 
+
 // -------------------------------------
 //   Base-level 
 // -------------------------------------
-body, select, input, textarea { //from h5bp
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, select, input, textarea {
 	color: $c-text;
 }
 
 body {
 	font-size: 100%;
+  background-color: #fff;
 }
 
 // -------------------------------------
 //   Block Content
 // -------------------------------------
 
-ul, p {
-  margin-bottom: $b-space;
+ul, ol, p, table {
+  @include font-size(16.5px,$b-lineheight); // han.css hack
+  margin-bottom: $b-space-xs;
   margin-top: 0;
 }
 
 li {
-  margin-bottom: $b-space-s;
+  // margin-bottom: $b-space-s;
   margin-top: 0;
 }
 
@@ -39,7 +48,7 @@ h3, .h3,
 h4, .h4 {
   font-family: $b-fontFamily-heading;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 2;
   margin-bottom: $b-space-xs;
   margin-top: 0;
 }
@@ -59,3 +68,4 @@ a {
     -webkit-transition: color .3s ease-in-out;
     transition:         color .3s ease-in-out;
 }
+

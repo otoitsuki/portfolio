@@ -1,6 +1,5 @@
 @function pxtorem($px){//$px為需要轉換的字號
     @return $px / $b-fontSize * 1rem;
-    @return $px;
 }
 
 @function pxtoem($target, $context:$b-fontSize) {

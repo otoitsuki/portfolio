@@ -12,6 +12,7 @@
 // ----- Palette ----- //
 
 $plum: #4e4e5b;
+$green: #319422;
 
 // ----- Base ----- //
 
@@ -20,7 +21,7 @@ $c-background: #ecf0f1;
 $c-text-invert: white;
 $c-text: #333;
 
-$c-link: $plum;
+$c-link: $green;
 $c-link-hover: darken($c-link, 10);
 $c-link-visited: darken($c-link, 21);
 $c-link-active: adjust_hue($c-link, 12);
@@ -57,10 +58,10 @@ $b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
 
 // ----- Typography ----- //
 
-$b-fontFamily-heading: sans-serif;
 $b-fontSize: 16px;
 $b-lineheight: 1.8;
 $b-fontfamily: '微軟正黑體', 'Microsoft JhengHei', '新細明體', 'PMingLiU', sans-serif;
+$b-fontFamily-heading: $b-fontfamily;
 $b-fontSize-xs: 60%;
 $b-fontSize-s: 75%;
 $b-fontSize-m: 90%;

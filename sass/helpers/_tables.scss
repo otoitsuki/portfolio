@@ -12,8 +12,8 @@
 $normal-table-bgc-odd: #fff;
 $normal-table-bgc-even: #f1f6fc;
 $normal-table-bgc-hover: #bbd4ee;
-$normal-table-border:  #84b2e0;
-$normal-table-box-shadow: rgba(0,0,0,0.1);
+$normal-table-border:  $b-borderColor;
+$normal-table-box-shadow: $b-boxShadow;
 
 
 %normal-table {

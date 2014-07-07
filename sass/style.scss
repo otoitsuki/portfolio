@@ -30,7 +30,12 @@
 
 // ----- Reset ----- //
 
-@import "core/typo";
+//漢字標準格式
+@import "core/han.sass";
+
+//typo.css
+//@import "core/typo";
+  
 
 // ----- Helpers(mixins) ----- //
 // 專門include用的
@@ -55,7 +60,7 @@
 
 
 // csswizard 的 flag-object
-@import "modules/flag-object";
+//@import "modules/flag-object";
 
 
 // bootstrap的media-object
@@ -63,6 +68,7 @@
 
 //buttons http://alexwolfe.github.io/Buttons/
 //@import "modules/buttons/buttons";
+
 
 // -------------------------------------
 //   Partials 該專案專屬全站共通元件 (Components其之二)
@@ -74,7 +80,6 @@
 //   pages 個別頁面特殊排版、設計 放about.scss etc (Components其之三，不過是以區塊命名檔案)
 // -------------------------------------
 
-@import "pages"; 
 
 
 // -------------------------------------

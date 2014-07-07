@@ -44,6 +44,8 @@
 // 支援IE8 的 rgba() 背景顏色 MIXIN，用法：@include bg-rgba(#fff,0.5);
 @import "helpers/bg-rgba";
 
+// 複數圖片背景
+@import "helpers/muti-bg";
 
 // -------------------------------------
 //   other

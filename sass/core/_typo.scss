@@ -26,7 +26,6 @@ SOFTWARE.
 
 // 防止用戶自定義背景顏色對網頁的影響，添加讓用戶可以自定義字體 //
 html {
-	color: $c-text;
 	background: #fff;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -127,9 +126,9 @@ address, caption, cite, code, dfn, em, th, var {
 }
 
 // 去掉列表前的標識, li 會繼承，大部分網站通常用列表來很多內容，所以應該當去 //
-ul, ol {
-	list-style: none;
-}
+// ul, ol {
+// 	list-style: none;
+// }
 
 // 對齊是排版最重要的因素, 別讓什麼都居中 //
 caption, th {

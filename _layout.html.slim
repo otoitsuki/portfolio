@@ -24,8 +24,9 @@ html.han-biaodian-pro-cns (lang="zh-tw")
     / script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
 
     /[if (gte IE 6)&(lte IE 8)]
-      script type="text/javascript" src="scripts/selectivizr-min.js"
-
+      script src="scripts/selectivizr-min.js"
+    /[if lt IE 9]
+      script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"
 
   body
     .page
@@ -34,8 +35,8 @@ html.han-biaodian-pro-cns (lang="zh-tw")
       = render :partial => "modules/footer"
 
     /[if IE]
-      script src="scripts/pie-setup.js" type="text/javascript"
-      script src="scripts/PIE.js" type="text/javascript"
+      script src="scripts/pie-setup.js"
+      script src="scripts/PIE.js"
     
     / <script src="./scripts/han.js"></script>
 

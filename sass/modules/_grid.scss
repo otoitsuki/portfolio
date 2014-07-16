@@ -11,8 +11,8 @@
 $show-grid-backgrounds  : false;
 // phone
 $container-style: static;
-$total-columns: 6;
-$column-width: 150px; //欄位寬度  
+$total-columns: 12;
+$column-width: 60px; //欄位寬度  
 $gutter-width: 20px; //欄位與欄位間的間距  
 $grid-padding: 10px; //格線最外圍左右邊的間距  
 
@@ -23,13 +23,17 @@ $grid-padding: 10px; //格線最外圍左右邊的間距
 .grid {
   @include container;
   @include susy-grid-background;
+  @include border-box-sizing;
 }
 
 .header {
 
 }
-
+.sidebar {
+  @include span-columns(2, 12);
+}
 .content {
+  @include span-columns(10 omega, 12);
 
 }
 

@@ -5,8 +5,8 @@
 // ------------------------------------------------
 @mixin card-block($override,$total:12) {
 	@include span-columns($total,$total);
-	margin: 0;
-	padding: 0;
+	margin: 0 !important;
+	padding: 0 !important; 
 	list-style-type: none;
 	> li {
 		@include span-columns($total / $override,$total);

@@ -6,7 +6,7 @@
     font-size:$fontsize;
     font-size:($fontsize / $b-fontSize)*1rem;
     @if $line-height == true{
-        line-height:ceil($fontsize / $b-lineheight) * ($b-lineheight / $fontsize);
+        line-height:ceil($line-height / $b-lineheight) * ($b-lineheight / $line-height);
 
     }
 }

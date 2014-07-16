@@ -1,5 +1,5 @@
 doctype 5
-html.han-biaodian-pro-cns (lang="zh-tw")
+html(lang="zh-tw")
   head
     meta charset="utf-8"
     meta name="viewport" content="width=device-width initial-scale=1"
@@ -20,23 +20,23 @@ html.han-biaodian-pro-cns (lang="zh-tw")
     link href="favicon.ico" rel="shortcut icon" type="imagex-icon"
 
     link href="styles/style.css" rel="stylesheet"
-
-    / script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
-
+    
+    / selectivizr本機端只能夠搭配本機端的jquery library，有用到selectivizr就兩個都用本機端，沒有用到就接Google CDN(在footer)
+    script src="scripts/jquery-1.11.1.js"
     /[if (gte IE 6)&(lte IE 8)]
-      script src="scripts/selectivizr-min.js"
+      script src="scripts/selectivizr.js"
     /[if lt IE 9]
       script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"
 
   body
     .page
-      = render :partial => "modules/header"
       = yield
-      = render :partial => "modules/footer"
-
+    
+    / script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
     /[if IE]
       script src="scripts/pie-setup.js"
       script src="scripts/PIE.js"
+    script src="scripts/main.js"
     
     / <script src="./scripts/han.js"></script>
 

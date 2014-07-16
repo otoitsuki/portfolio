@@ -10,11 +10,11 @@
 // -------------------------------------
 //   Base-level 
 // -------------------------------------
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+// * {
+//   -webkit-box-sizing: border-box;
+//      -moz-box-sizing: border-box;
+//           box-sizing: border-box;
+// }
 
 body, select, input, textarea {
 	color: $c-text;
@@ -23,6 +23,7 @@ body, select, input, textarea {
 body {
 	font-size: 100%;
   background-color: #fff;
+  background: url(../images/bg.png) repeat;
 }
 
 // -------------------------------------
@@ -69,3 +70,11 @@ a {
     transition:         color .3s ease-in-out;
 }
 
+
+// -------------------------------------
+//   Typography
+// -------------------------------------
+
+.text-important {
+  color: $c-important;
+}

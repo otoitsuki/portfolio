@@ -316,12 +316,12 @@ h1, h2, h3, h4, h5, h6{
 
 // 高亮選中 //
 ::-moz-selection {
-    background:#08c;
-    color:#fff;
+    background:$c-selected-background;
+    color:$c-selected-font;
 }
 ::selection {
-    background:#08c;
-    color:#fff;
+    background:$c-selected-background;
+    color:$c-selected-font;
 }
 
 // TODO: 供著重號使用 //

@@ -5,17 +5,17 @@
 $unicorn-btn-namespace: ".button"; //prefix for all classes
 $unicorn-btn-glow-namespace: ".glow";
 $unicorn-btn-glow-color: #2c9adb;
-$unicorn-btn-bgcolor: #EEE;
+$unicorn-btn-bgcolor: $green;
 $unicorn-btn-height: 32px;
 
 
 //////////////////////////////////////////////////////////
 // TYPOGRAPHY ////////////////////////////////////////////
 //////////////////////////////////////////////////////////
-$unicorn-btn-font-color: #666;
+$unicorn-btn-font-color: #fff;
 $unicorn-btn-font-size: 14px;
 $unicorn-btn-font-weight: 300;
-$unicorn-btn-font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+$unicorn-btn-font-family: $b-fontfamily;
 
 //////////////////////////////////////////////////////////
 // BUTTON OPTIONS ////////////////////////////////////////

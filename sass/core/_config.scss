@@ -13,6 +13,7 @@
 
 $plum: #4e4e5b;
 $green: #319422;
+$brown: #6c481d;
 
 // ----- Base ----- //
 
@@ -23,8 +24,8 @@ $c-text: #333;
 
 $c-link: $green;
 $c-link-hover: darken($c-link, 10);
-$c-link-visited: darken($c-link, 21);
 $c-link-active: adjust_hue($c-link, 12);
+$c-link-visited: darken($c-link, 21);
 $c-link-focus: $c-link-hover;
 
 $c-selected-font: #fff;
@@ -33,14 +34,8 @@ $c-selected-background: #0086AB;
 $c-invalid-background: #f0dddd;
 
 
-// ----- Components ----- //
-
-// ...
-
-// ----- Structures ----- //
-
-// ...
-
+// ----- Typography ----- //
+$c-important: red;
 
 // -------------------------------------
 //   Base
@@ -60,7 +55,7 @@ $b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
 
 $b-fontSize: 16px;
 $b-lineheight: 1.8;
-$b-fontfamily: '微軟正黑體', 'Microsoft JhengHei', '新細明體', 'PMingLiU', sans-serif;
+$b-fontfamily: 'noto sans','微軟正黑體', 'Microsoft JhengHei', '新細明體', 'PMingLiU', sans-serif;
 $b-fontFamily-heading: $b-fontfamily;
 $b-fontSize-xs: 60%;
 $b-fontSize-s: 75%;
@@ -72,7 +67,7 @@ $b-fontSize-xl: 150%;
 
 // $b-maxWidth: pxtoem(1024px);
 // $b-maxWidth-s: pxtoem(700px);
-$b-space: 20px/$b-fontSize *1em;
+$b-space: pxtoem(20px);
 $b-space-xs: 0.25 * $b-space;
 $b-space-s: 0.5 * $b-space;
 $b-space-l: 2 * $b-space;

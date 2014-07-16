@@ -24,6 +24,10 @@
 //   Core / Foundation
 // -------------------------------------
 
+// ----- Helpers(mixins) ----- //
+// 專門include用的
+
+@import "core/helpers";
 // ----- Settings ----- //
 
 @import "core/config";
@@ -31,16 +35,12 @@
 // ----- Reset ----- //
 
 //漢字標準格式
-@import "core/han.sass";
+// @import "core/han.sass";
 
 //typo.css
-//@import "core/typo";
+@import "core/typo";
   
 
-// ----- Helpers(mixins) ----- //
-// 專門include用的
-
-@import "core/helpers";
 
 // ----- Base+Content ----- //
 
@@ -69,6 +69,8 @@
 //buttons http://alexwolfe.github.io/Buttons/
 //@import "modules/buttons/buttons";
 
+// 各種 table 設計樣式
+//@import "helpers/tables";
 
 // -------------------------------------
 //   Partials 該專案專屬全站共通元件 (Components其之二)
@@ -81,9 +83,6 @@
 // -------------------------------------
 
 
-
 // -------------------------------------
 //   Inbox
 // -------------------------------------
-
-

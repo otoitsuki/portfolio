@@ -1,9 +1,9 @@
 - content_for :title do
   | 首頁
 .header
-
+  = render :partial => "modules/header"
 .main
-	p 
-		= zh_lorem_paragraphs(5)
-
+  .grid
+  
 .footer
+  = render :partial => "modules/footer"

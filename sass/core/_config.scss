@@ -37,6 +37,11 @@ $c-invalid-background: #f0dddd;
 // ----- Typography ----- //
 $c-important: red;
 
+
+
+
+
+
 // -------------------------------------
 //   Base
 // -------------------------------------
@@ -55,13 +60,14 @@ $b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
 
 $b-fontSize: 16px;
 $b-lineheight: 1.8;
-$b-fontfamily: 'noto sans','微軟正黑體', 'Microsoft JhengHei', '新細明體', 'PMingLiU', sans-serif;
-$b-fontFamily-heading: $b-fontfamily;
-$b-fontSize-xs: 60%;
-$b-fontSize-s: 75%;
-$b-fontSize-m: 90%;
-$b-fontSize-l: 115%;
-$b-fontSize-xl: 150%;
+$b-fontFamily: '新細明體', 'PMingLiU', sans-serif;
+$b-fontFamily-heading:  'Source Han Sans', 'Noto Sans CJK', '微軟正黑體', 'Microsoft JhengHei', '新細明體', 'PMingLiU', serif;
+$b-fontSize-xs: 0.75em;
+$b-fontSize-s: 0.813em;
+$b-fontSize-m: 0.938em;
+$b-fontSize-l: 1.25em;
+$b-fontSize-xl: 1.5em;
+// P.s: H1 size = 32px / 2em
 
 // ----- Sizing ----- //
 

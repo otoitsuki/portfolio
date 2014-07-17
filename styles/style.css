@@ -45,7 +45,7 @@ audio, canvas, video {
 }
 
 body, button, input, select, textarea {
-  font: 0.875em/1.8 "noto sans", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
+  font: 0.875em/1.8 "新細明體", "PMingLiU", sans-serif;
 }
 
 button, input {
@@ -212,7 +212,7 @@ figcaption {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   *font-weight: 800;
-  font-family: "noto sans", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
+  font-family: "新細明體", "PMingLiU", sans-serif;
   color: #333;
 }
 
@@ -324,7 +324,7 @@ h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4 {
-  font-family: "noto sans", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
+  font-family: "Source Han Sans", "Noto Sans CJK", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", serif;
   font-weight: bold;
   line-height: 2;
   margin-bottom: 0.3125em;

@@ -324,7 +324,7 @@ h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4 {
-  font-family: "Source Han Sans", "Noto Sans CJK", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", serif;
+  font-family: "Source Han Sans", "Noto Sans CJK", "微軟正黑體", "Microsoft JhengHei", serif;
   font-weight: bold;
   line-height: 2;
   margin-bottom: 0.3125em;

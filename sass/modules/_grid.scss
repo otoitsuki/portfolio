@@ -30,15 +30,12 @@ $grid-padding: 10px; //格線最外圍左右邊的間距
 
 }
 .sidebar {
-  @include span-columns(2, 12);
 }
 .content {
-  @include span-columns(10 omega, 12);
 
 }
 
 .footer {
-
 }
 
 

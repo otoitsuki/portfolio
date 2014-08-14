@@ -1,11 +1,11 @@
 - content_for :title do
   | 首頁
 .header
-  = render :partial => "modules/header"
-.main
+  = render :partial => "/partials/header"
+.content
   .grid
     h1 == zh_lorem_sentence
     == zh_lorem_paragraph
     == jp_lorem_paragraph
 .footer
-  = render :partial => "modules/footer"
+  = render :partial => "/partials/footer"

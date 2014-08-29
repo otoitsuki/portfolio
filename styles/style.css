@@ -1,1 +1,407 @@
-@charset "utf-8";html{background:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility}body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}body,button,input,select,textarea{font:0.875em/1.8 "新細明體","PMingLiU",sans-serif}button,input{*width:auto;*overflow:visible;line-height:22px}table{border-collapse:collapse;border-spacing:0}th{text-align:inherit}fieldset,img{border:0}img{-ms-interpolation-mode:bicubic}iframe{display:block}blockquote{font-family:Optima, Georgia, STSong, serif;margin:1em 0;color:#999;padding:0.6em 1em;background:#f8f8f8;border-left:0.4em solid #ddd}blockquote blockquote{padding:0 0 0 1em;margin-left:2em}acronym,abbr{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}caption,th{text-align:left}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:text-top\9}:root sub,:root sup{vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}u,.typo-u{text-decoration:underline}mark{background:#fffdd1}pre,code{font-family:"Courier New", Courier, monospace;white-space:pre-wrap;word-wrap:break-word}pre{background:#f8f8f8;border:1px solid #ddd;padding:1em 1.5em}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:10px;*color:pink;*filter:chroma(color=pink);height:10px;*margin:-7px 0 2px}small,.typo-small,figcaption{font-size:0.9em;color:#888}[draggable]{cursor:move}.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.typo p,.typo pre,.typo ul,.typo ol,.typo dl,.typo form,.typo hr,.typo table,.typo-p,.typo-pre,.typo-ul,.typo-ol,.typo-dl,.typo-form,.typo-hr,.typo-table{margin-bottom:1.2em}h1,h2,h3,h4,h5,h6{font-weight:500;*font-weight:800;font-family:"新細明體","PMingLiU",sans-serif;color:#333}.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6,.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6{margin-bottom:0.4em;line-height:1.5}.typo h1,.typo-h1{font-size:1.8em}.typo h2,.typo-h2{font-size:1.6em}.typo h3,.typo-h3{font-size:1.4em}.typo h4,.typo-h4{font-size:1.2em}.typo h5,.typo h6,.typo-h5,.typo-h6{font-size:1em}.typo ul,.typo-ul{margin-left:1.3em;list-style:disc}.typo ol,.typo-ol{list-style:decimal;margin-left:1.9em}.typo li ul,.typo li ol,.typo-ul ul,.typo-ul ol,.typo-ol ul,.typo-ol ol{margin-top:0;margin-bottom:0;margin-left:2em}.typo li ul,.typo-ul ul,.typo-ol ul{list-style:circle}.typo table th,.typo table td,.typo-table th,.typo-table td .typo table caption{border:1px solid #ddd;padding:0.5em 1em;color:#666}.typo table th,.typo-table th{background:#fbfbfb}.typo table thead th,.typo-table thead th{background:#f1f1f1}.typo table .caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}::-moz-selection{background:#0086ab;color:#fff}::selection{background:#0086ab;color:#fff}.typo-em,.typo em,legend,caption{font-weight:700}body,select,input,textarea{color:#333}body{font-size:100%;background-color:#fff;background:url(../images/bg.png) repeat}ul,ol,p,table{font-size:16.5px;font-size:1.03125rem;margin-bottom:0.3125em;margin-top:0}li{margin-top:0}h1,.h1,h2,.h2,h3,.h3,h4,.h4{font-family:"Source Han Sans","Noto Sans CJK","微軟正黑體","Microsoft JhengHei",serif;font-weight:bold;line-height:2;margin-bottom:0.3125em;margin-top:0}img{max-width:100%;height:auto}a{color:#319422;text-decoration:none;-webkit-transition:color .3s ease-in-out;transition:color .3s ease-in-out}a:visited{color:#143d0e}a:focus{color:#236b18}a:hover{color:#236b18}a:active{color:#22942a}.text-important{color:red}.grid{*zoom:1;width:940px;padding-left:10px;padding-right:10px;margin-left:auto;margin-right:auto;-webkit-background-origin:content;-moz-background-origin:content;-ms-background-origin:content-box;-o-background-origin:content-box;background-origin:content-box;-webkit-background-clip:content-box;-moz-background-clip:content-box;background-clip:content-box}.grid:after{content:"";display:table;clear:both}.grid *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.l-block{display:block}.l-pullLeft{float:left}.l-pullRight{float:right}.blockC{margin-right:auto;margin-left:auto}.tC{text-align:center}
+@charset "utf-8";
+/*
+TYPO.CSS - a better way to manage the typography of your Chinese-lang-base site.
+
+Copyright (C) 2012 Sofish Lin http://sofish.de
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+/* line 28, ../sass/core/_typo.scss */
+html {
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility; }
+
+/* line 36, ../sass/core/_typo.scss */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+/* line 42, ../sass/core/_typo.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 47, ../sass/core/_typo.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* line 54, ../sass/core/_typo.scss */
+body, button, input, select, textarea {
+  font: 0.875em/1.8 "新細明體", "PMingLiU", sans-serif; }
+
+/* line 59, ../sass/core/_typo.scss */
+button, input {
+  *width: auto;
+  *overflow: visible;
+  line-height: 22px; }
+
+/* line 68, ../sass/core/_typo.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 74, ../sass/core/_typo.scss */
+th {
+  text-align: inherit; }
+
+/* line 79, ../sass/core/_typo.scss */
+fieldset, img {
+  border: 0; }
+
+/* line 84, ../sass/core/_typo.scss */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+/* line 89, ../sass/core/_typo.scss */
+iframe {
+  display: block; }
+
+/* line 94, ../sass/core/_typo.scss */
+blockquote {
+  font-family: Optima, Georgia, STSong, serif;
+  margin: 1em 0;
+  color: #999;
+  padding: 0.6em 1em;
+  background: #f8f8f8;
+  border-left: 0.4em solid #ddd; }
+
+/* line 102, ../sass/core/_typo.scss */
+blockquote blockquote {
+  padding: 0 0 0 1em;
+  margin-left: 2em; }
+
+/* line 108, ../sass/core/_typo.scss */
+acronym, abbr {
+  border-bottom: 1px dotted;
+  font-variant: normal; }
+
+/* line 114, ../sass/core/_typo.scss */
+abbr {
+  cursor: help; }
+
+/* line 119, ../sass/core/_typo.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 123, ../sass/core/_typo.scss */
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 400; }
+
+/* line 134, ../sass/core/_typo.scss */
+caption, th {
+  text-align: left; }
+
+/* line 138, ../sass/core/_typo.scss */
+q:before, q:after {
+  content: ''; }
+
+/* line 143, ../sass/core/_typo.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: text-top\9; }
+
+/* line 149, ../sass/core/_typo.scss */
+:root sub, :root sup {
+  vertical-align: baseline; }
+
+/* line 152, ../sass/core/_typo.scss */
+sup {
+  top: -0.5em; }
+
+/* line 155, ../sass/core/_typo.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 160, ../sass/core/_typo.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 165, ../sass/core/_typo.scss */
+ins, a {
+  text-decoration: none; }
+
+/* line 175, ../sass/core/_typo.scss */
+u, .typo-u {
+  text-decoration: underline; }
+
+/* line 180, ../sass/core/_typo.scss */
+mark {
+  background: #fffdd1; }
+
+/* line 185, ../sass/core/_typo.scss */
+pre, code {
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* line 190, ../sass/core/_typo.scss */
+pre {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 1em 1.5em; }
+
+/* line 197, ../sass/core/_typo.scss */
+hr {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  margin-bottom: 10px;
+  *color: pink;
+  *filter: chroma(color=pink);
+  height: 10px;
+  *margin: -7px 0 2px; }
+
+/* line 210, ../sass/core/_typo.scss */
+small, .typo-small,
+figcaption {
+  font-size: 0.9em;
+  color: #888; }
+
+/* line 216, ../sass/core/_typo.scss */
+[draggable] {
+  cursor: move; }
+
+/* line 220, ../sass/core/_typo.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+/* line 225, ../sass/core/_typo.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 229, ../sass/core/_typo.scss */
+.clearfix {
+  zoom: 1; }
+
+/* line 234, ../sass/core/_typo.scss */
+.textwrap, .textwrap td, .textwrap th {
+  word-wrap: break-word;
+  word-break: break-all; }
+
+/* line 238, ../sass/core/_typo.scss */
+.textwrap-table {
+  table-layout: fixed; }
+
+/* line 244, ../sass/core/_typo.scss */
+.typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr, .typo table,
+.typo-p, .typo-pre, .typo-ul, .typo-ol, .typo-dl, .typo-form, .typo-hr, .typo-table {
+  margin-bottom: 1.2em; }
+
+/* line 248, ../sass/core/_typo.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  *font-weight: 800;
+  font-family: "新細明體", "PMingLiU", sans-serif;
+  color: #333; }
+
+/* line 257, ../sass/core/_typo.scss */
+.typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6,
+.typo-h1, .typo-h2, .typo-h3, .typo-h4, .typo-h5, .typo-h6 {
+  margin-bottom: 0.4em;
+  line-height: 1.5; }
+
+/* line 261, ../sass/core/_typo.scss */
+.typo h1, .typo-h1 {
+  font-size: 1.8em; }
+
+/* line 264, ../sass/core/_typo.scss */
+.typo h2, .typo-h2 {
+  font-size: 1.6em; }
+
+/* line 267, ../sass/core/_typo.scss */
+.typo h3, .typo-h3 {
+  font-size: 1.4em; }
+
+/* line 270, ../sass/core/_typo.scss */
+.typo h4, .typo-h4 {
+  font-size: 1.2em; }
+
+/* line 273, ../sass/core/_typo.scss */
+.typo h5, .typo h6, .typo-h5, .typo-h6 {
+  font-size: 1em; }
+
+/* line 278, ../sass/core/_typo.scss */
+.typo ul, .typo-ul {
+  margin-left: 1.3em;
+  list-style: disc; }
+
+/* line 282, ../sass/core/_typo.scss */
+.typo ol, .typo-ol {
+  list-style: decimal;
+  margin-left: 1.9em; }
+
+/* line 286, ../sass/core/_typo.scss */
+.typo li ul, .typo li ol, .typo-ul ul, .typo-ul ol, .typo-ol ul, .typo-ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2em; }
+
+/* line 291, ../sass/core/_typo.scss */
+.typo li ul, .typo-ul ul, .typo-ol ul {
+  list-style: circle; }
+
+/* line 296, ../sass/core/_typo.scss */
+.typo table th, .typo table td, .typo-table th, .typo-table td .typo table caption {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  color: #666; }
+
+/* line 301, ../sass/core/_typo.scss */
+.typo table th, .typo-table th {
+  background: #fbfbfb; }
+
+/* line 304, ../sass/core/_typo.scss */
+.typo table thead th, .typo-table thead th {
+  background: #f1f1f1; }
+
+/* line 307, ../sass/core/_typo.scss */
+.typo table .caption {
+  border-bottom: none; }
+
+/* line 312, ../sass/core/_typo.scss */
+.typo-input, .typo-textarea {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+/* line 318, ../sass/core/_typo.scss */
+::-moz-selection {
+  background: #0086ab;
+  color: white; }
+
+/* line 322, ../sass/core/_typo.scss */
+::selection {
+  background: #0086ab;
+  color: white; }
+
+/* line 328, ../sass/core/_typo.scss */
+.typo-em, .typo em, legend, caption {
+  font-weight: 700; }
+
+/* line 19, ../sass/core/_base.scss */
+body, select, input, textarea {
+  color: #333333; }
+
+/* line 23, ../sass/core/_base.scss */
+body {
+  font-size: 100%;
+  background-color: #fff; }
+
+/* line 32, ../sass/core/_base.scss */
+ul, ol, p, table {
+  font-size: 16.5;
+  font-size: 1.03125rem;
+  margin-bottom: 1.25em;
+  margin-top: 0; }
+
+/* line 38, ../sass/core/_base.scss */
+li {
+  margin-top: 0; }
+
+/* line 48, ../sass/core/_base.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-family: "Source Han Sans", "Noto Sans CJK", "微軟正黑體", "Microsoft JhengHei", serif;
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 0.3125em;
+  margin-top: 0; }
+
+/* line 60, ../sass/core/_base.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 65, ../sass/core/_base.scss */
+a {
+  color: #319422;
+  text-decoration: none;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out; }
+  /* line 18, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:visited {
+    color: #143d0e; }
+  /* line 21, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:focus {
+    color: #236b18; }
+  /* line 24, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:hover {
+    color: #236b18; }
+  /* line 27, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:active {
+    color: #22942a; }
+
+/* line 77, ../sass/core/_base.scss */
+.text-important {
+  color: red; }
+
+/* line 23, ../sass/modules/_grid.scss */
+.grid {
+  *zoom: 1;
+  width: 58.75em;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  -ms-background-origin: content-box;
+  -o-background-origin: content-box;
+  background-origin: content-box;
+  -webkit-background-clip: content-box;
+  -moz-background-clip: content-box;
+  background-clip: content-box; }
+  /* line 38, ../../../fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 14, ../../../fire.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
+  .grid * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/* line 48, ../sass/modules/_grid.scss */
+.l-block {
+  display: block; }
+
+/* line 52, ../sass/modules/_grid.scss */
+.l-pullLeft {
+  float: left; }
+
+/* line 57, ../sass/modules/_grid.scss */
+.l-pullRight {
+  float: right; }
+
+/* line 61, ../sass/modules/_grid.scss */
+.blockC {
+  margin-right: auto;
+  margin-left: auto; }
+
+/* line 66, ../sass/modules/_grid.scss */
+.tC {
+  text-align: center; }

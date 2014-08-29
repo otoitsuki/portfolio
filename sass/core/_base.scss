@@ -17,13 +17,12 @@
 // }
 
 body, select, input, textarea {
-	color: $c-text;
+  color: $c-text;
 }
 
 body {
-	font-size: 100%;
+  font-size: 100%;
   background-color: #fff;
-  background: url(../images/bg.png) repeat;
 }
 
 // -------------------------------------
@@ -31,8 +30,8 @@ body {
 // -------------------------------------
 
 ul, ol, p, table {
-  @include font-size(16.5px,$b-lineheight); // han.css hack
-  margin-bottom: $b-space-xs;
+  @include font-size(16.5); // han.css hack
+  margin-bottom: $b-space;
   margin-top: 0;
 }
 

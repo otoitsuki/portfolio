@@ -12,9 +12,9 @@ $show-grid-backgrounds  : false;
 // phone
 $container-style: static;
 $total-columns: 12;
-$column-width: 60px; //欄位寬度  
-$gutter-width: 20px; //欄位與欄位間的間距  
-$grid-padding: 10px; //格線最外圍左右邊的間距  
+$column-width: pxtoem(60px); //欄位寬度  
+$gutter-width: pxtoem(20px); //欄位與欄位間的間距  
+$grid-padding: pxtoem(10px); //格線最外圍左右邊的間距  
 
 
 // -------------------------------------

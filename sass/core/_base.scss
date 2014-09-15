@@ -31,7 +31,7 @@ body {
 
 ul, ol, p, table {
   @include font-size(16.5); // han.css hack
-  margin-bottom: $b-space;
+  margin-bottom: $b-space-xs;
   margin-top: 0;
 }
 

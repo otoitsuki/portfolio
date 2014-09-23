@@ -4,22 +4,9 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-XXXX-Y', 'auto');
-ga('send', 'pageview');
+  ga('create', 'UA-XXXX-Y', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
 
-// RANK 
-if (document.referrer.match(/google\.(com|co\.jp)/gi) && document.referrer.match(/cd/gi)) {
-  var myString = document.referrer;
-  var r        = myString.match(/cd=(.*?)&/);
-  var rank     = parseInt(r[1]);
-  var kw       = myString.match(/q=(.*?)&/);
-   
-  if (kw[1].length > 0) {
-    var keyWord  = decodeURI(kw[1]);
-  } else {
-    keyWord = "(not provided)";
-  }
- 
-  var p        = document.location.pathname;
-  ga('send', 'event', 'RankTracker', keyWord, p, rank, true);
-}
+  // Adjusted Bounce Rate From http://www.quickonlinetips.com/archives/2014/08/adjusted-bounce-rate-in-universal-google-analytics/
+  setTimeout("ga('send','event','adjusted bounce rate','page visit 15 seconds or more')",15000);

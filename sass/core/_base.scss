@@ -17,7 +17,7 @@
 // }
 
 body, select, input, textarea {
-  color: $c-text;
+	color: $c-text;
 }
 
 body {
@@ -30,7 +30,8 @@ body {
 // -------------------------------------
 
 ul, ol, p, table {
-  @include font-size(16.5); // han.css hack
+  @include font-size(16px);
+  line-height: 1.8;
   margin-bottom: $b-space-xs;
   margin-top: 0;
 }
@@ -46,8 +47,9 @@ h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4 {
-  font-family: $b-fontFamily-heading;
-  font-weight: bold;
+  font-family: $b-fontFamily-serif;
+  font-weight: 500;
+  // Chrome底下思源黑體不支援數字字級
   line-height: 2;
   margin-bottom: $b-space-xs;
   margin-top: 0;

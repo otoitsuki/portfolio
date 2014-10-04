@@ -12,17 +12,18 @@
 // ----- Palette ----- //
 
 $plum: #4e4e5b;
-$green: #319422;
+$green: #81cdb0;
 $brown: #6c481d;
+$blue: #2ca7e5;
 
 // ----- Base ----- //
 
 $c-background-invert: white;
 $c-background: #ecf0f1;
 $c-text-invert: white;
-$c-text: #333;
+$c-text: #57595a;
 
-$c-link: $green;
+$c-link: $blue;
 $c-link-hover: darken($c-link, 10);
 $c-link-active: adjust_hue($c-link, 12);
 $c-link-visited: darken($c-link, 21);
@@ -59,9 +60,9 @@ $b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
 // ----- Typography ----- //
 
 $b-fontSize: 16px;
-$b-lineheight: 1.8;
-$b-fontFamily: '新細明體', 'PMingLiU', sans-serif;
-$b-fontFamily-heading:  'Source Han Sans', 'Noto Sans CJK', '微軟正黑體', 'Microsoft JhengHei', serif;
+$b-lineHeight: 1.8;
+$b-fontFamily:  "新細明體", "PMingLiU", serif;
+$b-fontFamily-serif:  "思源黑體","微軟正黑體", "Microsoft JhengHei", sans-serif;
 $b-fontSize-xs: 0.75em;
 $b-fontSize-s: 0.813em;
 $b-fontSize-m: 0.938em;

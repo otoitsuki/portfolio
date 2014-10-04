@@ -10,12 +10,13 @@
 // -------------------------------------
 $show-grid-backgrounds  : false;
 // phone
-$container-style: static;
-$total-columns: 12;
-$column-width: pxtoem(60px); //欄位寬度  
-$gutter-width: pxtoem(20px); //欄位與欄位間的間距  
-$grid-padding: pxtoem(10px); //格線最外圍左右邊的間距  
-
+$container-style: magic ;
+$total-columns: 6;
+$column-width: pxtorem(266px); //欄位寬度  
+$gutter-width: 0rem; //欄位與欄位間的間距  
+$grid-padding: pxtorem(2px); //格線最外圍左右邊的間距  
+$tablet: pxtorem(1080px) 4 pxtorem(1600px);
+$phone: 4 pxtorem(1079px);    
 
 // -------------------------------------
 //   Grid
@@ -24,25 +25,140 @@ $grid-padding: pxtoem(10px); //格線最外圍左右邊的間距
   @include container;
   @include susy-grid-background;
   @include border-box-sizing;
+  max-width: 1600px;
+  min-width: 535px;
 }
 
-.header {
 
-}
-.sidebar {
-}
-.content {
+// --- 6grid system --- //
 
+.page-block {
+  @extend %clearfix;
 }
 
-.footer {
+  .content-block {
+      @include span-columns(2 ,6);
+        &:nth-child(3n) { @include omega; } 
+      @extend %clearfix;
+  }
+
+  .content-block {
+    .content {
+      clear: both;
+    }
+  }
+
+// 特殊變形款
+
+.content-2block {
+  @include span-columns(4 omega ,6);
+   .content-block {
+      @include span-columns(1 ,2);
+        &:nth-child(2n) { @include omega; } 
+  }
 }
 
+  // 共六種 content-block
+
+  .full {
+  }
+
+  // EX:人物介紹四顆頭
+  .block4 {
+    > .col-1-6 {
+      line-height: 0;
+      @include span-columns(1 ,2);
+        &:nth-child(2n) { @include omega; } 
+    }
+  }
+
+  // EX:下載中間兩直的長條圖
+  .block2-h {
+    > .col-1-6 {
+      @include span-columns(1 ,2);
+        &:nth-child(2n) { @include omega; } 
+    }
+  }
+
+  // EX:下載免費版區塊
+  .block2-v {
+    > .content,.col-2-6 {
+      width: 100%;
+    }
+  }
+
+  // EX:人物介紹中間區塊
+  .block2-title {
+    > .content,.col-2-6 {
+      width: 100%;
+    }
+  }
+  
+  // EX:下載完整版版區塊
+  .block3-up2 {
+    > .col-1-6 {
+      line-height: 0;
+      @include span-columns(1 ,2);
+        &:nth-child(2n) { @include omega; } 
+    }
+    > .col-2-6 {
+      width: 100%;
+    }
+  }
+
+  .content-block img {
+    text-align: center;
+    width: 100%;
+  }
+
+// media-query
+
+@include at-breakpoint($tablet) {
+  .grid { @include container; }
+
+  .content-block {
+      @include span-columns(3 ,6);
+      @extend %clearfix;
+      height: auto;
+  }
+
+  .content-2block {
+    @include span-columns(6 ,6);
+    >.content-block {
+        @include span-columns(1 ,2);
+          &:nth-child(2n) { @include omega; } 
+    }
+  }
+
+  
+}
+
+@include at-breakpoint($phone) {
+  .grid { @include container; }
+
+  .content-block {
+      @include span-columns(6 ,6);
+      @extend %clearfix;
+      height: auto;
+  }
+
+  .content-2block {
+    @include span-columns(6 ,6);
+     .content-block {
+        @include span-columns(1 ,1);
+          &:nth-child(2n) { @include omega; } 
+    }
+  }
+
+}
 
 // -------------------------------------
 //   Utilities
 // -------------------------------------
 
+%clearfix {
+  @include clearfix;
+}
 
 
 %l-block, .l-block {

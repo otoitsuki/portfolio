@@ -54,35 +54,137 @@
 // Susy Grid
 @import "modules/grid";
 
-
 // y2b RWD
 //@import "modules/y2b";
 
-
 // csswizard 的 flag-object
 //@import "modules/flag-object";
-
 
 // bootstrap的media-object
 //@import "modules/media-object";
 
 //buttons http://alexwolfe.github.io/Buttons/
-//@import "modules/buttons/buttons";
+@import "modules/buttons/buttons";
 
 // 各種 table 設計樣式
 //@import "helpers/tables";
+
+// Plurk to BBS
+@import "modules/plurk-bbs";
+
+// Social Buttons
+@import "modules/social-buttons";
+
 
 // -------------------------------------
 //   Partials 該專案專屬全站共通元件 (Components其之二)
 // -------------------------------------
 
-
+@import "partials/title";
+@import "partials/page";
+@import "partials/content";
+@import "partials/btn";
+@import "partials/footer";
 
 // -------------------------------------
 //   pages 個別頁面特殊排版、設計 放about.scss etc (Components其之三，不過是以區塊命名檔案)
 // -------------------------------------
 
+@import "pages/hero-unit";
+@import "pages/story";
+@import "pages/chara";
+@import "pages/dl";
+@import "pages/staffspec";
+@import "pages/bbs";
 
 // -------------------------------------
 //   Inbox
 // -------------------------------------
+
+.container {
+}
+
+.page-block {
+}
+
+.slogan{
+
+}
+
+.pure-text {
+}
+
+.header-title {
+}
+
+.page-text {
+}
+
+.page-text > br {
+}
+
+.page-text > a {
+}
+
+.pic-text-center {
+}
+
+.col-2-6 {
+}
+
+.col-2-6 > img {
+}
+
+.content {
+}
+
+.content > a {
+}
+
+.content > img {
+}
+
+.col-1-6 {
+}
+
+.col-1-6 > img {
+}
+
+.gallery {
+}
+
+.btn {
+}
+
+.pic-text-left {
+}
+
+.staff {
+}
+
+.staff > li {
+}
+
+.require {
+}
+
+.require > li {
+}
+
+.footer {
+}
+
+.copyright {
+}
+
+.copyright > p {
+}
+
+.footer-nav {
+}
+
+.footer-nav > a {
+}
+
+.footer-nav > a > img {
+}

@@ -4,8 +4,13 @@
   = render :partial => "/partials/header"
 .content
   .grid
-    h1 == zh_lorem_sentence
-    == zh_lorem_paragraph
-    == jp_lorem_paragraph
+    h1 = zh_lorem_sentence
+    p = zh_lorem_paragraph
+    p = jp_lorem_paragraph
+
+    h1 = zh_lorem_sentence
+    h2 = zh_lorem_sentence
+    h3 = zh_lorem_sentence
+    h4 = zh_lorem_sentence
 .footer
   = render :partial => "/partials/footer"

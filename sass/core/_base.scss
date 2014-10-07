@@ -41,20 +41,6 @@ li {
   margin-top: 0;
 }
 
-// ----- Headers ----- //
-
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4 {
-  font-family: $b-fontFamily-serif;
-  font-weight: 500;
-  // Chrome底下思源黑體不支援數字字級
-  line-height: 2;
-  margin-bottom: $b-space-xs;
-  margin-top: 0;
-}
-
 // -------------------------------------
 //   Inline Content
 // -------------------------------------
@@ -75,6 +61,33 @@ a {
 // -------------------------------------
 //   Typography
 // -------------------------------------
+
+
+// ----- Headers ----- //
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-family: $b-fontFamily-serif;
+  font-weight: 500; // Chrome底下思源黑體不支援數字字級
+  line-height: 2;
+  margin-bottom: $b-space-xs;
+  margin-top: 0;
+}
+
+
+// 黃金比例字級 16px, 25.9px, 41.9px, 67.8px
+
+h1 { @include font-size(67.8px); }
+h2 { @include font-size(41.9px); }
+h3 { @include font-size(25.9px); }
+h4 { @include font-size(16px); }
+
+
+
+// ----- others ----- //
+
 
 .text-important {
   color: $c-important;

@@ -1928,24 +1928,31 @@ input.button-tiny, button.button-tiny {
   border: 0;
   overflow: hidden;
   *zoom: 1; }
-  /* line 49, ../../../fire.app1_12/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
+  /* line 60, ../../../fire.app1_12/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
   .social-buttons li {
     list-style-image: none;
     list-style-type: none;
     margin-left: 0;
-    display: -moz-inline-stack;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    zoom: 1;
-    *display: inline;
-    white-space: nowrap; }
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px; }
+    /* line 48, ../../../fire.app1_12/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    .social-buttons li:first-child, .social-buttons li.first {
+      padding-left: 0; }
+    /* line 49, ../../../fire.app1_12/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    .social-buttons li:last-child {
+      padding-right: 0; }
+    /* line 50, ../../../fire.app1_12/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    .social-buttons li.last {
+      padding-right: 0; }
 
 /* line 9, ../sass/modules/_social-buttons.scss */
 .social-buttons li {
-  padding: 10px 5px;
-  height: 30px; }
+  padding-left: 5px;
+  line-height: 20px; }
 
 /* line 14, ../sass/modules/_social-buttons.scss */
-.social-buttons li:nth-child(3) {
-  padding-top: 2px; }
+.fb_iframe_widget {
+  vertical-align: middle; }

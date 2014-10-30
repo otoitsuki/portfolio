@@ -60,15 +60,44 @@ $b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
 // ----- Typography ----- //
 
 $b-fontSize: 16px;
-$b-lineHeight: 1.8;
-$b-fontFamily:  "新細明體", "PMingLiU", serif;
-$b-fontFamily-serif:  "思源黑體","微軟正黑體", "Microsoft JhengHei", sans-serif;
+$b-lineHeight: 24.8 / 16; // 24.8 / $b-fontSize
+$b-fontFamily-serif:  "新細明體", "PMingLiU", serif;
+$b-fontFamily-sans:  "思源黑體","微軟正黑體", "Microsoft JhengHei", sans-serif;
+
+// default font-family
+
+$b-fontFamily: $b-fontFamily-serif;
+
+// font-size //
+
 $b-fontSize-xs: 0.75em;
 $b-fontSize-s: 0.813em;
 $b-fontSize-m: 0.938em;
 $b-fontSize-l: 1.25em;
 $b-fontSize-xl: 1.5em;
 // P.s: H1 size = 32px / 2em
+
+
+// Material Design 12、14、16、20、34sp > 1、1.166、1.333、1.666、2.833em
+
+$b-fontSize-MD-h1: 1.666em;
+$b-fontSize-MD-h2: 1.333em;
+$b-fontSize-MD-h3: 1.166em;
+$b-fontSize-MD-h4: 1em;
+
+
+// 黃金比例字級 16px, 25.9px, 41.9px, 67.8px
+
+$b-fontSize-Golden-h1: 67.8px;
+$b-fontSize-Golden-h2: 41.9px;
+$b-fontSize-Golden-h3: 25.9px;
+$b-fontSize-Golden-h4: 16px;
+
+
+$b-fontSize-Golden-h2: 34px;
+$b-fontSize-Golden-h3: 20px;
+$b-fontSize-Golden-h4: 16px;
+
 
 // ----- Sizing ----- //
 

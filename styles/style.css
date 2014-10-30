@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* (c) 2014 Itsuki. http://otoitsuki.info  */
 /*
 TYPO.CSS - a better way to manage the typography of your Chinese-lang-base site.
 
@@ -312,8 +313,8 @@ body {
 ul, ol, p, table {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.8;
-  margin-bottom: 0.3125em;
+  line-height: 1.55;
+  margin-bottom: 22.88px;
   margin-top: 0; }
 
 /* line 39, ../sass/core/_base.scss */
@@ -351,31 +352,27 @@ h3, .h3,
 h4, .h4 {
   font-family: "思源黑體", "微軟正黑體", "Microsoft JhengHei", sans-serif;
   font-weight: 500;
-  line-height: 2;
-  margin-bottom: 0.3125em;
-  margin-top: 0; }
+  line-height: 1.47em;
+  margin: 0;
+  padding: 1.5em 0 .5em; }
 
-/* line 82, ../sass/core/_base.scss */
+/* line 80, ../sass/core/_base.scss */
 h1 {
-  font-size: 67.8px;
-  font-size: 4.2375rem; }
-
-/* line 83, ../sass/core/_base.scss */
-h2 {
-  font-size: 41.9px;
-  font-size: 2.61875rem; }
+  font-size: 1.666em; }
 
 /* line 84, ../sass/core/_base.scss */
-h3 {
-  font-size: 25.9px;
-  font-size: 1.61875rem; }
+h2 {
+  font-size: 1.333em; }
 
-/* line 85, ../sass/core/_base.scss */
-h4 {
-  font-size: 16px;
-  font-size: 1rem; }
+/* line 88, ../sass/core/_base.scss */
+h3 {
+  font-size: 1.166em; }
 
 /* line 92, ../sass/core/_base.scss */
+h4 {
+  font-size: 1em; }
+
+/* line 102, ../sass/core/_base.scss */
 .text-important {
   color: red; }
 

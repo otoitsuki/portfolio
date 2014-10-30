@@ -30,9 +30,9 @@ body {
 // -------------------------------------
 
 ul, ol, p, table {
-  @include font-size(16px);
-  line-height: 1.8;
-  margin-bottom: $b-space-xs;
+  @include font-size($b-fontSize);
+  line-height: $b-lineHeight;
+  margin-bottom: $b-fontSize * 1.43;
   margin-top: 0;
 }
 
@@ -69,20 +69,30 @@ h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4 {
-  font-family: $b-fontFamily-serif;
+  font-family: $b-fontFamily-sans;
   font-weight: 500; // Chrome底下思源黑體不支援數字字級
-  line-height: 2;
-  margin-bottom: $b-space-xs;
-  margin-top: 0;
+  line-height: 1.47em;
+  margin: 0;
+  padding: 1.5em 0 .5em;
 }
 
 
-// 黃金比例字級 16px, 25.9px, 41.9px, 67.8px
-
-h1 { @include font-size(67.8px); }
-h2 { @include font-size(41.9px); }
-h3 { @include font-size(25.9px); }
-h4 { @include font-size(16px); }
+h1 { 
+  font-size: $b-fontSize-MD-h1;
+  // font-size: $b-fontSize-Golden-h1;
+}
+h2 { 
+  font-size: $b-fontSize-MD-h2;
+  // font-size: $b-fontSize-Golden-h2;
+}
+h3 { 
+  font-size: $b-fontSize-MD-h3;
+  // font-size: $b-fontSize-Golden-h3;
+}
+h4 { 
+  font-size: $b-fontSize-MD-h4;
+  // font-size: $b-fontSize-Golden-h4;
+}
 
 
 

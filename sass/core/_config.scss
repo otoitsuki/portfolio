@@ -64,7 +64,7 @@ $b-lineHeight: 24.8 / 16; // 24.8 / $b-fontSize
 $b-fontFamily-serif:  "新細明體", "PMingLiU", serif;
 $b-fontFamily-sans:  "思源黑體","微軟正黑體", "Microsoft JhengHei", sans-serif;
 
-// default font-family
+// default font-family //
 
 $b-fontFamily: $b-fontFamily-serif;
 
@@ -78,7 +78,7 @@ $b-fontSize-xl: 1.5em;
 // P.s: H1 size = 32px / 2em
 
 
-// Material Design 12、14、16、20、34sp > 1、1.166、1.333、1.666、2.833em
+// Material Design 12、14、16、20、34sp -> 1、1.166、1.333、1.666、2.833em
 
 $b-fontSize-MD-h1: 1.666em;
 $b-fontSize-MD-h2: 1.333em;

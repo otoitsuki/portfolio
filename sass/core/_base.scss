@@ -16,14 +16,17 @@
 //           box-sizing: border-box;
 // }
 
+html {
+  font-size: 100%;
+  font-family: $b-fontFamily;
+  background-color: #fff;
+}
+
 body, select, input, textarea {
 	color: $c-text;
 }
 
-body {
-  font-size: 100%;
-  background-color: #fff;
-}
+
 
 // -------------------------------------
 //   Block Content
@@ -65,15 +68,16 @@ a {
 
 // ----- Headers ----- //
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $b-fontFamily-sans;
   font-weight: 500; // Chrome底下思源黑體不支援數字字級
   line-height: 1.47em;
-  margin: 0;
-  padding: 1.5em 0 .5em;
+  @include rem-fallback(margin, .25, 0, .7, 0); // from https://github.com/Dogfalo/materialize/blob/master/sass/components/_typography.scss
 }
 
 

@@ -61,12 +61,12 @@ $b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
 
 $b-fontSize: 16px;
 $b-lineHeight: 24.8 / 16; // 24.8 / $b-fontSize
-$b-fontFamily-serif:  "新細明體", "PMingLiU", serif;
-$b-fontFamily-sans:  "思源黑體","微軟正黑體", "Microsoft JhengHei", sans-serif;
+$b-fontFamily-serif: "PMingLiU", serif;
+$b-fontFamily-sans:  "Source Han Sans", "Microsoft JhengHei", "Roboto", sans-serif;
 
 // default font-family //
 
-$b-fontFamily: $b-fontFamily-serif;
+$b-fontFamily: $b-fontFamily-sans;
 
 // font-size //
 
@@ -78,13 +78,14 @@ $b-fontSize-xl: 1.5em;
 // P.s: H1 size = 32px / 2em
 
 
-// Material Design 12、14、16、20、34sp -> 1、1.166、1.333、1.666、2.833em
+// Material Design from https://github.com/Dogfalo/materialize/blob/master/sass/components/_typography.scss
 
-$b-fontSize-MD-h1: 1.666em;
-$b-fontSize-MD-h2: 1.333em;
-$b-fontSize-MD-h3: 1.166em;
-$b-fontSize-MD-h4: 1em;
-
+$b-fontSize-MD-h1: 4.1rem;
+$b-fontSize-MD-h2: 3.21rem;
+$b-fontSize-MD-h3: 2.42rem;
+$b-fontSize-MD-h4: 1.71rem;
+$b-fontSize-MD-h5: 1.42rem;
+$b-fontSize-MD-h6: 1rem;
 
 // 黃金比例字級 16px, 25.9px, 41.9px, 67.8px
 
@@ -93,10 +94,6 @@ $b-fontSize-Golden-h2: 41.9px;
 $b-fontSize-Golden-h3: 25.9px;
 $b-fontSize-Golden-h4: 16px;
 
-
-$b-fontSize-Golden-h2: 34px;
-$b-fontSize-Golden-h3: 20px;
-$b-fontSize-Golden-h4: 16px;
 
 
 // ----- Sizing ----- //

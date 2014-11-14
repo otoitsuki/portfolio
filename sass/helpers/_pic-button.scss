@@ -4,7 +4,7 @@
 // hover:XXXX_over.png
 
 // Sample:
-// @include pic-button("66page-now66-cart",0,0,141px,40px);
+// @include pic-button("66page-now66-cart",png,0,0,141px,40px);
 
 
 @mixin pic-button($imgfile,$format,$xpos,$ypos,$width,$height) {
@@ -13,7 +13,8 @@
 	background-position: $xpos $ypos;
 	height: $height;
 	width: $width;
-	border: none;    
+	border: none;
+	cursor: pointer;    
 
   &:hover {
   	background: url('../images/'+ $imgfile + '_over.' + $format) no-repeat transparent;

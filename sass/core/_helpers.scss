@@ -10,11 +10,12 @@
 //   functions
 // -------------------------------------
 
-// 輸入rem轉px＆rem
-@import "helpers/remCalc";
-
 // 輸入 px 轉 rem
 @import "helpers/pxconvert";
+
+// 輸入rem轉 px＆rem
+@import "helpers/remCalc";
+
 
 
 
@@ -41,6 +42,8 @@
 // 複數圖片背景
 @import "helpers/muti-bg";
 
+// 更乾淨的sticky-footer，取代compass
+@import "helpers/sticky-footer";
 // -------------------------------------
 //   other
 // -------------------------------------

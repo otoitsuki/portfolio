@@ -8,7 +8,7 @@
 //   License
 // -------------------------------------
 
-/* (c) 2014 Itsuki. http://otoitsuki.info  */
+// (c) 2014 Itsuki. http://otoitsuki.info  */
 
 // -------------------------------------
 //   Compass
@@ -25,6 +25,9 @@
 // -------------------------------------
 
 @import "susy";
+@import 'breakpoint';
+// susy 1 專案使用
+// @import "susyone";
 
 // -------------------------------------
 //   Core / Foundation
@@ -34,25 +37,31 @@
 // 專門include用的
 
 @import "core/helpers";
+
 // ----- Settings ----- //
 
 @import "core/config";
 
 // ----- Reset ----- //
 
+@import "normalize";
+
 //漢字標準格式
 // @import "core/han.sass";
 
 //typo.css
-@import "core/typo";
+// @import "core/typo";
 
-// ----- Base + Content ----- //
+// @import "compass/reset"; 
+
+// ----- Base+Content ----- //
 
 @import "core/base";
 
 
+
 // -------------------------------------
-//   modules 網站可重複使用元件 (Components其之一)
+//   modules 網站可重複使用元件 (Components)
 // -------------------------------------
 
 // Susy Grid
@@ -68,31 +77,29 @@
 //@import "modules/media-object";
 
 //buttons http://alexwolfe.github.io/Buttons/
-@import "modules/buttons/buttons";
+// @import "modules/buttons/buttons";
 
 // 各種 table 設計樣式
 //@import "helpers/tables";
 
 // Plurk to BBS
-@import "modules/plurk-bbs";
+// @import "modules/plurk-bbs";
 
 // Social Buttons
-@import "modules/social-buttons";
+// @import "modules/social-buttons";
 
 
 // -------------------------------------
-//   Partials 該專案專屬全站共通元件 (Components其之二)
+//   Structures 該專案專屬元件
 // -------------------------------------
 
-// @import "partials/title";
-// @import "partials/page";
-// @import "partials/content";
+// @import "structures/page";
+// @import "structures/block";
+// @import "structures/header";
+// @import "structures/footer";
+// @import "structures/question";
 // @import "partials/btn";
 // @import "partials/footer";
-
-// -------------------------------------
-//   pages 個別頁面特殊排版、設計 放about.scss etc (Components其之三，不過是以區塊命名檔案)
-// -------------------------------------
 
 
 // -------------------------------------

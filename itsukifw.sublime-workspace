@@ -1,0 +1,349 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "config.rb",
+			"settings":
+			{
+				"buffer_size": 1126,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_layout.html.slim",
+			"settings":
+			{
+				"buffer_size": 1888,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 337.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"recent ",
+				"Evernote: List recent notes"
+			],
+			[
+				"sear",
+				"Evernote: Search Note"
+			],
+			[
+				"evernote",
+				"Evernote: List recent notes"
+			],
+			[
+				"searc",
+				"Evernote: Search Note"
+			],
+			[
+				"slim",
+				"Set Syntax: Ruby Slim"
+			],
+			[
+				"recent",
+				"Evernote: List recent notes"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"def",
+				"Package Syncing: Define Sync Folder"
+			],
+			[
+				"de",
+				"Package Syncing: Define Sync Folder"
+			],
+			[
+				"package s",
+				"Package Syncing: Define Sync Folder"
+			],
+			[
+				"package",
+				"Package Control: Discover Packages"
+			],
+			[
+				"sync ",
+				"Package Syncing: Pull Settings"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 584.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/tsuki/Documents/Dropbox/f2e software/@template/itsuki-site-fw"
+	],
+	"file_history":
+	[
+		"/Users/tsuki/Library/Preferences/doublecmd/doublecmd.xml",
+		"/Users/tsuki/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/tsuki/Library/Application Support/Karabiner/private.xml",
+		"/Users/tsuki/Documents/Dropbox/yuki/222/scenario/地球儀.txt",
+		"/Users/tsuki/Documents/Dropbox/f2e software/@template/itsuki-site-fw/scripts/main.js",
+		"/Users/tsuki/Documents/Dropbox/f2e software/@template/itsuki-site-fw/partials/_pie-setup.html.slim",
+		"/System/Library/LaunchDaemons/com.apple.audio.coreaudiod.plist",
+		"/Users/tsuki/Library/Services/7-zip RightClick.workflow/Contents/document.wflow",
+		"/Users/tsuki/Library/Services/7-zip RightClick.workflow/Contents/Info.plist",
+		"/Users/tsuki/Documents/Dropbox/@web site/kxk/shizuyuki/public/222/index.html",
+		"/Users/tsuki/.ssh/id_rsa.pub",
+		"/Users/tsuki/.ssh/heroku_rsa",
+		"/Users/tsuki/.ssh/herokukxk_rsa",
+		"/Users/tsuki/.ssh/known_hosts",
+		"/Users/tsuki/Documents/Dropbox/@web site/Github/doujinNews/doujinnews.js",
+		"/Users/tsuki/Documents/Dropbox/@web site/Github/doujinNews/doujinnews.html.erb",
+		"/Users/tsuki/Documents/Dropbox/f2e software/@template/itsuki-site-fw/_layout.html.slim",
+		"/Users/tsuki/Documents/Dropbox/@web site/kxk/shizuyuki/works/_social.html.erb",
+		"/Users/tsuki/Documents/Dropbox/@web site/kxk/shizuyuki/works/_sozai-list.html.erb",
+		"/Users/tsuki/Documents/Dropbox/@web site/kxk/shizuyuki/works/data.yml",
+		"/Users/tsuki/Documents/Dropbox/@web site/kxk/shizuyuki/works/favicon.ico",
+		"/Users/tsuki/Documents/Dropbox/@web site/kxk/shizuyuki/works/fire_app_log.txt",
+		"/Users/tsuki/Documents/Dropbox/f2e software/@template/itsuki-site-fw/apple-touch-icon.png",
+		"/Users/tsuki/Documents/Dropbox/@web site/kxk/shizuyuki/public/main.html",
+		"/Users/tsuki/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/tsuki/Library/Application Support/Sublime Text 3/Packages/User/Evernote.sublime-settings",
+		"/Users/tsuki/Library/Application Support/Sublime Text 3/Packages/User/Package Syncing.sublime-settings",
+		"/Users/tsuki/Library/Application Support/Sublime Text 3/Packages/Package Syncing/Package Syncing.sublime-settings"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"#"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"double",
+			"app",
+			"VIRTUALMACHINE",
+			"＃＃＃",
+			"＃",
+			"string",
+			"KeepAlive",
+			"doujin-news",
+			"Calendar",
+			"calendar",
+			"meta "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"### ",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "config.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								348,
+								348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_layout.html.slim",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1032.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "itsukifw.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 174.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -10,14 +10,14 @@ Slim::Engine.set_default_options :pretty => true, :disable_escape => true, :form
 preferred_syntax = :scss
 
 css_dir = "styles" # by Fire.app 
-sass_dir = "assets/styles" # by Fire.app 
+sass_dir = "sass" # by Fire.app 
 images_dir = "images" # by Fire.app 
-javascripts_dir = "assets/scripts" # by Fire.app 
+javascripts_dir = "scripts" # by Fire.app 
 fireapp_coffeescripts_dir = "coffeescripts" # by Fire.app 
 fireapp_livescripts_dir = "livescripts" # by Fire.app 
 fireapp_minifyjs_on_build = true # by Fire.app 
 fireapp_always_report_on_build = true # by Fire.app 
-output_style = :compressed # by Fire.app 
+output_style = :nested # by Fire.app 
 relative_assets = false # by Fire.app 
 line_comments = false # by Fire.app 
 sass_options = {:debug_info=>false} # by Fire.app 

@@ -14,6 +14,7 @@
 }
 // 區塊標題
 .title.title--headline {
+  @include font-size(36px);
 }
 // 內文標題
 .title.title--title {

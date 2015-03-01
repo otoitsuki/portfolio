@@ -1,23 +1,49 @@
-- content_for :title, "首頁"
-.header
-  = render "/partials/header"
+- content_for :title, "Itsuki's Potofolio"
+header
+  h1.name Itsuki Lin
+  nav
+    ul.main-nav
+      li
+        a href="#works" Works
+      li
+        a href="http://otoitsuki.info/" target="_blank" Site
+      li
+        a href="http://otoitsuki.logdown.com/" target="_blank" Blog
+      li
+        a href="https://github.com/otoitsuki/" target="_blank" Github
+      li
+        a href="http://plus.google.com/116876259684580262461" target="_blank" Google+
+  ul.skill-list
+    li.skill-item
+      img.skill-img src="images/thumb_skill_ia.png" alt="IA"/
+      span.skill-name IA
+    li.skill-item
+      img.skill-img src="images/thumb_skill_wireframe.png" alt="Wireframe"/
+      span.skill-name Wireframe
+    li.skill-item
+      img.skill-img src="images/thumb_skill_prototype.png" alt="Prototype"/
+      span.skill-name Prototype
+    / li.skill-item
+    /   img.skill-img src="http://placehold.jp/999999/ffffff/205x205.png?text=UX" alt="UX"/
+    /   span.skill-name UX
+    li.skill-item
+      img.skill-img src="images/thumb_skill_f2e.png" alt="Front-end Design"/
+      span.skill-name Front-end Design
 .container
-  .grid
-    h1 = zh_lorem_sentence
-    p = zh_lorem_paragraph
-    p = jp_lorem_paragraph
-    = render "partials/social.html.erb"
-    .sidebar
-    .main
-      h1 我是 h1
-      p = zh_lorem_sentence
-      h2 我是 h2
-      p = zh_lorem_sentence
-      h3 我是 h3
-      p = zh_lorem_sentence
-      h4 我是 h4
-      p = zh_lorem_sentence
-.footer
-  = render "/partials/footer" 
-= content_for :page_javascript
-   script src="scripts/main.js"
+  h2.title.title--headline id="works"作品集
+  .mod-works
+    .works-slideshow
+      img src="images/pic_works_twpc.png" alt="鼎文公職網路書店與入口網改版"
+    h3.works-title 鼎文公職網路書店與入口網改版
+    p.works-content 網站前台規劃、IA、UX設計
+  .mod-works
+    .works-slideshow
+      img src="images/pic_works_twm.png" alt="鼎文公職網路書店行動版"
+    h3.works-title 鼎文公職網路書店行動版
+    p.works-content 網站前台規劃、IA、UX設計、UI設計、前端設計
+footer
+  .slogan
+  | 素晴らしく残酷な世界で足掻け
+  address 
+    a href="mailto:otoitsuki@gmail.com" &copy; Itsuki Lin 2015 
+  

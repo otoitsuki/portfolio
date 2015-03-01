@@ -24,8 +24,8 @@ $show-grid-backgrounds: hide; // 選項：show、hide、show-columns、show-base
 $susy: (
   math: fluid,
   container: auto, // container最大寬度。預設auto，依照columns與gutters設定自動算出數值
-  columns: 4, // 預設是四欄
-  gutters: 12px/69px, // 欄位與欄位間的間距，單位是和columns的比例％，預設1/4
+  columns: 12, // 預設是四欄
+  gutters: 12px/60px, // 欄位與欄位間的間距，單位是和columns的比例％，預設1/4
   gutter-position: after , // 每欄之間顯示模式，看上面
   column-width: false, // 欄位寬度，預設是false（因為都是用比例去算）
   global-box-sizing: border-box, // 搭配 border-box-sizing mixin 使用，沒開不能用
@@ -41,20 +41,35 @@ $susy: (
   )
 );
 
+//新增Grid的Sass Map
+$works:(
+  gutters:12px/187px,
+  columns: 6,
+  gutter-position: split,
+  image: $show-grid-backgrounds
+);
 
 // -------------------------------------
 //   Grid
 // -------------------------------------
-.grid {
+.page {
   @include container;
   @include border-box-sizing;
-  padding: 0 20px;
+  // padding: 0 20px;
 }
+
+@include with-layout($works){
+    .mod-works{
+        @include container;
+        max-width: 1182px;
+    }
+}
+
 
 // --- 主要頁面區塊 --- //
 
 
-.header, .container, .footer {
+header, .container, footer {
   width: 100%;
 }
 

@@ -24,7 +24,7 @@ $c-background: #ffffff;
 $c-text-invert: white;
 $c-text: #111111;
 
-$c-link: $c-subhighlight ;
+$c-link: #787878;
 $c-link-hover: darken($c-link, 10);
 $c-link-active: adjust_hue($c-link, 12);
 $c-link-visited: darken($c-link, 10);

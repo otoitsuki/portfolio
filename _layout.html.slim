@@ -53,6 +53,7 @@ html lang="zh-tw"
     / = javascript_include_tag "/scripts/main"
     
     = yield(:page_javascript) if true
+    = livereload_js if ENV["RACK_ENV"] != "production"
     
 
       

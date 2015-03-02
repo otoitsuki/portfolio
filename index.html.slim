@@ -1,4 +1,4 @@
-- content_for :title, "Itsuki's Potofolio"
+- content_for :title, "Itsuki's Portfolio"
 header
   h1.name Itsuki Lin
   nav
@@ -33,7 +33,13 @@ header
   h2.title.title--headline id="works"作品集
   .mod-works
     .works-slideshow
-      img src="images/pic_works_twpc.png" alt="鼎文公職網路書店與入口網改版"
+      ul.slider
+        li.slide.active-slide
+            img src="images/pic_works_twpc.png" alt="鼎文公職網路書店與入口網改版"
+        li.slide  
+            img src="images/pic_works_twpc-plan.png" alt="鼎文公職網路書店與入口網改版規劃圖"
+      a.arrow-prev < 
+      a.arrow-next >
     h3.works-title 鼎文公職網路書店與入口網改版
     p.works-content 網站前台規劃、IA、UX設計
   .mod-works
@@ -43,7 +49,7 @@ header
     p.works-content 網站前台規劃、IA、UX設計、UI設計、前端設計
 footer
   .slogan
-  | 素晴らしく残酷な世界で足掻け
+  | 素晴らしく残酷な世界で足掻け 
   address 
-    a href="mailto:otoitsuki@gmail.com" &copy; Itsuki Lin 2015 
+    a href="mailto:itsuki@about.me" &copy; Itsuki Lin 2015 
   

@@ -5,18 +5,18 @@ html lang="zh-tw"
     meta name="viewport" content="width=device-width initial-scale=1"
     title = ( yield(:title) ? yield(:title)  : data["site-title"])
     meta http-equiv="X-UA-Compatible" content="IE=edge"
-    meta name="description" content= data["og-image"]  
+    / meta name="description" content= data["og-image"]  
     meta name="author" content= data["site-author"]
 
     meta content= data["site-title"] property="og:title"
     meta content= data["site-name"] property="og:site_name"
     meta content= data["site-url"] property="og:url"
     meta content= data["site-description"] property="og:description"
-    meta content= data["og-image"] property="og:image"
+    / meta content= data["og-image"] property="og:image"
     meta content= data["og-type"] property="og:type"
 
-    link href="favicon.ico" rel="icon" type="imagex-icon"
-    link href="favicon.ico" rel="shortcut icon" type="imagex-icon"
+    / link href="favicon.ico" rel="icon" type="imagex-icon"
+    / link href="favicon.ico" rel="shortcut icon" type="imagex-icon"
 
     // 如果網站不是裝在根目錄下，那麼CSS和JS都要改成一般相對路徑
     // 狀況一：有多層html，則做兩個header來對應子資料夾下的網頁
@@ -38,7 +38,14 @@ html lang="zh-tw"
     /[if lt IE 9]
       script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"
       
-    / = javascript_include_tag "analytics.js"
+    javascript:
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-12631833-3', 'auto');
+      ga('send', 'pageview');
   body
     .page
 
@@ -50,7 +57,7 @@ html lang="zh-tw"
     / /[if IE]
     /   = render partial="/partials/pie-setup"
     /   = javascript_include_tag "/scripts/PIE"
-    / = javascript_include_tag "/scripts/main"
+    = javascript_include_tag "/scripts/main"
     
     = yield(:page_javascript) if true
     = livereload_js if ENV["RACK_ENV"] != "production"

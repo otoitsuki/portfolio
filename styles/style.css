@@ -137,7 +137,6 @@ figure {
   margin: 1em 40px; }
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -198,8 +197,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -255,6 +252,7 @@ img {
 a {
   color: #787878;
   text-decoration: none;
+  -webkit-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out; }
   a:visited {
     color: #5e5e5e; }
@@ -380,21 +378,19 @@ h4 {
 .span_1_of_12 {
   width: 6.866% !important; }
 
-.page {
+.container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 100%;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto; }
-  .page *, .page *:before, .page *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  .container *, .container *:before, .container *:after {
     box-sizing: border-box; }
 
 .mod-works {
   overflow: hidden;
   *zoom: 1;
-  max-width: 100%;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1182px; }
@@ -625,6 +621,7 @@ header {
       margin-top: 24px; }
   header:after {
     content: "";
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(156, 156, 156, 0) 75%, #d0d0d0 100%);
     background: linear-gradient(to bottom, transparent 0%, rgba(156, 156, 156, 0) 75%, #d0d0d0 100%);
     /* W3C */
     display: block;
@@ -674,6 +671,7 @@ header {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 3rem;
   text-decoration: none;
@@ -705,5 +703,3 @@ address {
   font-style: normal;
   font-size: 18px;
   font-size: 1.125rem; }
-
-/*# sourceMappingURL=style.css.map */

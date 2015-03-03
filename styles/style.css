@@ -383,7 +383,8 @@ h4 {
   *zoom: 1;
   max-width: 1440px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  max-width: 1440px; }
   .container *, .container *:before, .container *:after {
     box-sizing: border-box; }
 

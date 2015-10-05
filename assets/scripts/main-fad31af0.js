@@ -1,0 +1,1 @@
+var menuBtn=function(){$("#menuButton").click(function(n){n.defaultPrevented,$(".main-nav").toggle()})};$(function(){menuBtn()});
